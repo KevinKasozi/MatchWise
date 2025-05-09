@@ -223,6 +223,27 @@ def sync_repo(repo_path: str, repo_name: str, state: Dict, team_mapper: Dict, ar
                 stats.files_processed += 1
                 db = SessionLocal()
                 
+                # Determine competition name for Spanish leagues
+                competition_name = None
+                if repo_name == "es-espana":
+                    if "1-liga" in file.lower():
+                        competition_name = "La Liga"
+                    elif "2-liga2" in file.lower():
+                        competition_name = "La Liga 2"
+                    elif "cup" in file.lower():
+                        competition_name = "Copa del Rey"
+                else:
+                    competition_name = repo_name  # fallback
+
+                # Get or create competition if needed
+                competition = None
+                if competition_name:
+                    competition = db.query(Competition).filter(Competition.name == competition_name).first()
+                    if not competition:
+                        competition = Competition(name=competition_name, country="Spain" if repo_name == "es-espana" else None)
+                        db.add(competition)
+                        db.commit()
+
                 # Process based on file type
                 if file.endswith('.json') and is_club_file:
                     # Process club JSON files
@@ -258,7 +279,22 @@ def sync_repo(repo_path: str, repo_name: str, state: Dict, team_mapper: Dict, ar
                     # Process TXT fixture files
                     from scripts.parsers.fixture_parser import parse_fixture_txt
                     season_year = extract_season_year(file_path)
-                    season_id = get_or_create_season(db, season_year, repo_name)
+                    # Use the correct competition for the season
+                    season = None
+                    if competition:
+                        year_start = int(season_year) if season_year else None
+                        year_end = year_start + 1 if year_start else None
+                        season = db.query(Season).filter(Season.year_start == year_start, Season.year_end == year_end, Season.competition_id == competition.id).first() if year_start else None
+                        if not season and year_start:
+                            season = Season(
+                                year_start=year_start,
+                                year_end=year_end,
+                                season_name=f"{year_start}-{year_end}",
+                                competition_id=competition.id
+                            )
+                            db.add(season)
+                            db.commit()
+                    season_id = season.id if season else get_or_create_season(db, season_year, repo_name)
                     fixtures = parse_fixture_txt(file_path, team_mapper, season_year)
                     added, updated = bulk_upsert_fixtures(db, fixtures, season_id)
                     stats.fixtures_added += added
