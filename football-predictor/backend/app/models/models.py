@@ -119,4 +119,22 @@ class IngestionAudit(Base):
     ingested_at = Column(DateTime, default=datetime.utcnow)
     records_added = Column(Integer, default=0)
     records_updated = Column(Integer, default=0)
-    hash = Column(String, nullable=False) 
+    hash = Column(String, nullable=False)
+
+class Prediction(Base):
+    id = Column(Integer, primary_key=True, index=True)
+    fixture_id = Column(Integer, ForeignKey("fixture.id"), nullable=True)
+    home_team_id = Column(Integer, nullable=False)
+    away_team_id = Column(Integer, nullable=False)
+    match_date = Column(Date, nullable=False)
+    home_win_probability = Column(Integer)
+    draw_probability = Column(Integer)
+    away_win_probability = Column(Integer)
+    predicted_home_score = Column(Integer)
+    predicted_away_score = Column(Integer)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    actual_home_score = Column(Integer, nullable=True)
+    actual_away_score = Column(Integer, nullable=True)
+
+    # Optionally, add relationships
+    fixture = relationship("Fixture", backref="predictions") 

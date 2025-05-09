@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: matchwise
+      POSTGRES_PASSWORD: matchwise
+      POSTGRES_DB: matchwise
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./football-predictor/backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./football-predictor/backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://matchwise:matchwise@db:5432/matchwise
+    depends_on:
+      - db
+
+  frontend:
+    build: ./football-predictor/frontend
+    command: npm run dev -- --host
+    volumes:
+      - ./football-predictor/frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/v1
+
+volumes:
+  postgres_data: 

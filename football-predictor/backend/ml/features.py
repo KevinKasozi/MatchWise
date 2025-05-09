@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from typing import List, Dict, Any
 from sqlalchemy.orm import Session
-from ..app.models.models import Fixture, MatchResult, Team
+from app.models.models import Fixture, MatchResult, Team
 
 def get_team_stats(db: Session, team_id: int, before_date: str) -> Dict[str, float]:
     """Calculate team statistics from past matches."""

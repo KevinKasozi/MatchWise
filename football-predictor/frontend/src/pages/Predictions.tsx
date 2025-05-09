@@ -1,130 +1,115 @@
 import { useState } from 'react';
-import {
-  Box,
-  Typography,
-  Card,
-  CardContent,
-  Grid,
-  LinearProgress,
-  Button,
-} from '@mui/material';
-import { useQuery } from '@tanstack/react-query';
-import { apiClient } from '../api/client';
-import type { Fixture, Prediction } from '../types/api';
+
+// Mock data for demo
+const matches = [
+  {
+    id: 1,
+    home: {
+      name: 'Arsenal',
+      crest: 'https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg',
+      color: '#EF0107',
+    },
+    away: {
+      name: 'Chelsea',
+      crest: 'https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg',
+      color: '#034694',
+    },
+    kickoff: '19:00',
+    features: [
+      { label: 'Home Win Streak', value: 3 },
+      { label: 'xG Diff', value: '+0.7' },
+      { label: 'Home Form', value: 'W W D' },
+    ],
+    prediction: {
+      home: 0.68,
+      draw: 0.18,
+      away: 0.14,
+      winner: 'Arsenal',
+    },
+  },
+  {
+    id: 2,
+    home: {
+      name: 'Man Utd',
+      crest: 'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg',
+      color: '#DA291C',
+    },
+    away: {
+      name: 'Liverpool',
+      crest: 'https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg',
+      color: '#C8102E',
+    },
+    kickoff: '21:00',
+    features: [
+      { label: 'Away Win Streak', value: 2 },
+      { label: 'xG Diff', value: '-0.2' },
+      { label: 'Away Form', value: 'W D W' },
+    ],
+    prediction: {
+      home: 0.32,
+      draw: 0.41,
+      away: 0.27,
+      winner: 'Draw',
+    },
+  },
+];
 
 export default function Predictions() {
-  const [selectedFixture, setSelectedFixture] = useState<number | null>(null);
-
-  const { data: fixtures, isLoading: fixturesLoading } = useQuery<Fixture[]>({
-    queryKey: ['upcomingFixtures'],
-    queryFn: () =>
-      apiClient
-        .get('/fixtures', {
-          params: { status: 'upcoming' },
-        })
-        .then((res) => res.data),
-  });
-
-  const { data: prediction, isLoading: predictionLoading } = useQuery<Prediction>({
-    queryKey: ['prediction', selectedFixture],
-    queryFn: () =>
-      apiClient
-        .get(`/predictions/${selectedFixture}`)
-        .then((res) => res.data),
-    enabled: !!selectedFixture,
-  });
-
-  const handlePredict = (fixtureId: number) => {
-    setSelectedFixture(fixtureId);
-  };
-
-  if (fixturesLoading) {
-    return <Typography>Loading fixtures...</Typography>;
-  }
+  const [selectedId, setSelectedId] = useState(matches[0].id);
+  const match = matches.find((m) => m.id === selectedId)!;
 
   return (
-    <Box>
-      <Typography variant="h4" gutterBottom>
-        Match Predictions
-      </Typography>
-
-      <Grid container spacing={3}>
-        {fixtures?.map((fixture) => (
-          <Grid item xs={12} key={fixture.id}>
-            <Card>
-              <CardContent>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <Box>
-                    <Typography variant="h6">
-                      {fixture.home_team_id} vs {fixture.away_team_id}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {new Date(fixture.match_date).toLocaleDateString()}
-                    </Typography>
-                  </Box>
-                  <Button
-                    variant="contained"
-                    onClick={() => handlePredict(fixture.id)}
-                    disabled={predictionLoading && selectedFixture === fixture.id}
-                  >
-                    Predict
-                  </Button>
-                </Box>
-
-                {selectedFixture === fixture.id && prediction && (
-                  <Box sx={{ mt: 2 }}>
-                    <Typography variant="subtitle1" gutterBottom>
-                      Prediction Results
-                    </Typography>
-                    <Grid container spacing={2}>
-                      <Grid item xs={12}>
-                        <Typography variant="body2">Home Win</Typography>
-                        <LinearProgress
-                          variant="determinate"
-                          value={prediction.home_win_probability * 100}
-                          sx={{ height: 10, borderRadius: 5 }}
-                        />
-                        <Typography variant="body2" color="text.secondary">
-                          {(prediction.home_win_probability * 100).toFixed(1)}%
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography variant="body2">Draw</Typography>
-                        <LinearProgress
-                          variant="determinate"
-                          value={prediction.draw_probability * 100}
-                          sx={{ height: 10, borderRadius: 5 }}
-                        />
-                        <Typography variant="body2" color="text.secondary">
-                          {(prediction.draw_probability * 100).toFixed(1)}%
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography variant="body2">Away Win</Typography>
-                        <LinearProgress
-                          variant="determinate"
-                          value={prediction.away_win_probability * 100}
-                          sx={{ height: 10, borderRadius: 5 }}
-                        />
-                        <Typography variant="body2" color="text.secondary">
-                          {(prediction.away_win_probability * 100).toFixed(1)}%
-                        </Typography>
-                      </Grid>
-                      {prediction.predicted_home_score !== undefined && (
-                        <Grid item xs={12}>
-                          <Typography variant="subtitle1">
-                            Predicted Score: {prediction.predicted_home_score} - {prediction.predicted_away_score}
-                          </Typography>
-                        </Grid>
-                      )}
-                    </Grid>
-                  </Box>
-                )}
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <div className="w-full p-4 space-y-8">
+      <div className="bg-white/60 backdrop-blur-md shadow-glass rounded-2xl p-8 border border-primary-light">
+        <div className="mb-4">
+          <label className="block text-xs uppercase tracking-widest text-slate-700 mb-2">Select Match</label>
+          <select
+            className="w-full p-2 rounded border border-slate-200 bg-white text-slate-900 focus:ring-2 focus:ring-primary"
+            value={selectedId}
+            onChange={(e) => setSelectedId(Number(e.target.value))}
+          >
+            {matches.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.home.name} vs {m.away.name} ({m.kickoff})
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="flex items-center gap-4 mb-4">
+          <img src={match.home.crest} alt={match.home.name} className="w-10 h-10" />
+          <span className="font-bold text-lg" style={{ color: match.home.color }}>{match.home.name}</span>
+          <span className="text-slate-700 font-semibold">vs</span>
+          <span className="font-bold text-lg" style={{ color: match.away.color }}>{match.away.name}</span>
+          <img src={match.away.crest} alt={match.away.name} className="w-10 h-10" />
+        </div>
+        {/* Prediction Bar */}
+        <div className="w-full max-w-xs mx-auto mb-2">
+          <div className="flex justify-between text-xs mb-1">
+            <span style={{ color: match.home.color }}>{match.home.name}</span>
+            <span>Draw</span>
+            <span style={{ color: match.away.color }}>{match.away.name}</span>
+          </div>
+          <div className="flex w-full h-6 rounded overflow-hidden border border-slate-200 bg-slate-100">
+            <div className="h-full" style={{ width: `${match.prediction.home * 100}%`, background: match.home.color, transition: 'width 0.5s' }} />
+            <div className="h-full bg-slate-400" style={{ width: `${match.prediction.draw * 100}%`, transition: 'width 0.5s' }} />
+            <div className="h-full" style={{ width: `${match.prediction.away * 100}%`, background: match.away.color, transition: 'width 0.5s' }} />
+          </div>
+          <div className="flex justify-between text-xs mt-1">
+            <span className="font-semibold" style={{ color: match.home.color }}>{Math.round(match.prediction.home * 100)}%</span>
+            <span className="font-semibold text-slate-700">{Math.round(match.prediction.draw * 100)}%</span>
+            <span className="font-semibold" style={{ color: match.away.color }}>{Math.round(match.prediction.away * 100)}%</span>
+          </div>
+        </div>
+        <div className="text-sm text-slate-600 mb-2">Prediction: <span className="font-bold text-primary">{match.prediction.winner}</span></div>
+        {/* Features Tooltip */}
+        <div className="flex flex-wrap gap-2 mt-2">
+          {match.features.map((f, i) => (
+            <span key={i} className="bg-primary-light text-primary px-2 py-1 rounded text-xs shadow-sm border border-primary/20" title={f.label}>
+              {f.label}: <span className="font-semibold text-slate-900">{f.value}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 } 

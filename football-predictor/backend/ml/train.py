@@ -6,8 +6,8 @@ from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 import joblib
 import json
 from sqlalchemy.orm import Session
-from .features import create_training_dataset
-from ..app.core.config import settings
+from ml.features import create_training_dataset
+from app.core.config import settings
 
 def train_models(db: Session):
     """Train the prediction models."""
