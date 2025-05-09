@@ -122,7 +122,7 @@ export default function Fixtures() {
                       .sort(([dateA], [dateB]) => new Date(dateA).getTime() - new Date(dateB).getTime())
                       .map(([date, fixtures]) => {
                         // Group fixtures by competition
-                        const fixturesByCompetition: Record<string, Fixture[]> = {};
+                        const fixturesByCompetition: Record<string, (Fixture & { result?: MatchResult })[]> = {};
                         fixtures.forEach(fixture => {
                           const competitionKey = fixture.competition_name || "Unknown Competition";
                           if (!fixturesByCompetition[competitionKey]) {
