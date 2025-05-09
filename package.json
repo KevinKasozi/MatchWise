@@ -12,5 +12,13 @@
   "devDependencies": {
     "@types/axios": "^0.9.36",
     "@types/react-router-dom": "^5.3.3"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "format": "prettier --check .",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "test:e2e": "playwright test",
+    "build": "vite build",
+    "start": "vite preview --port 3000"
   }
 }
