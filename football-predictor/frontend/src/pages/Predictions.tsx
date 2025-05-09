@@ -50,7 +50,7 @@ export default function Predictions() {
         setSelectedId((predictionsMock as MatchPrediction[])[0].id);
       }
       setLoading(false);
-    } catch (_e) {
+    } catch {
       setError("Failed to load prediction data");
       setLoading(false);
     }

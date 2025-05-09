@@ -170,8 +170,8 @@ export default function Fixtures() {
                                           
                                           <div className="flex flex-col items-center justify-center min-w-[80px]">
                                             <div className="bg-gray-100 rounded-lg px-3 py-1 text-sm font-bold text-gray-800 min-w-[60px] text-center">
-                                              {fixture.is_completed && 'result' in fixture ? (
-                                                <span>{fixture.result?.home_score} - {fixture.result?.away_score}</span>
+                                              {fixture.is_completed && fixture.result && typeof fixture.result.home_score === 'number' && typeof fixture.result.away_score === 'number' ? (
+                                                <span>{fixture.result.home_score} - {fixture.result.away_score}</span>
                                               ) : (
                                                 <span>vs</span>
                                               )}
