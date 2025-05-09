@@ -15,4 +15,11 @@ class FixtureRead(BaseModel):
     group_id: Optional[int] = None
 
     class Config:
-        from_attributes = True 
+        from_attributes = True
+
+class FixtureWithTeamNamesRead(FixtureRead):
+    home_team_name: Optional[str] = None
+    away_team_name: Optional[str] = None
+    match_time: Optional[str] = None
+    competition_name: Optional[str] = None
+    competition_country: Optional[str] = None 

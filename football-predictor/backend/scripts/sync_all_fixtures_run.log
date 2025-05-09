@@ -1,0 +1,614 @@
+===== Starting complete fixture data refresh at Fri May  9 04:05:35 BST 2025 =====
+2025-05-09 04:05:35,352 - INFO - Using database: postgresql+psycopg2://postgres:postgres@localhost:5432/football_predictor
+2025-05-09 04:05:35,400 - INFO - Starting fixture data synchronization
+2025-05-09 04:05:35,402 - WARNING - No season directories found for europa-league
+2025-05-09 04:05:35,402 - INFO - Found 5 league directories with latest seasons
+2025-05-09 04:05:35,403 - INFO - Found 28 competition files
+2025-05-09 04:05:35,408 - INFO - Extracted 506 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/4-league2.txt
+2025-05-09 04:05:35,412 - INFO - Extracted 304 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/1-premierleague.txt
+2025-05-09 04:05:35,413 - INFO - Extracted 110 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/facup.txt
+2025-05-09 04:05:35,414 - INFO - Extracted 80 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/eflcup.txt
+2025-05-09 04:05:35,419 - INFO - Extracted 506 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/2-championship.txt
+2025-05-09 04:05:35,424 - INFO - Extracted 506 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/3-league1.txt
+2025-05-09 04:05:35,429 - INFO - Extracted 506 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/eng-england/2024-25/5-nationalleague.txt
+2025-05-09 04:05:35,433 - INFO - Extracted 342 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/es-espana/2024-25/1-liga.txt
+2025-05-09 04:05:35,434 - INFO - Extracted 113 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/es-espana/2024-25/cup.txt
+2025-05-09 04:05:35,440 - INFO - Extracted 399 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/es-espana/2024-25/2-liga2.txt
+2025-05-09 04:05:35,443 - INFO - Extracted 306 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/4-regionalliga-bayern.txt
+2025-05-09 04:05:35,445 - INFO - Extracted 306 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/4-regionalliga-west.txt
+2025-05-09 04:05:35,448 - INFO - Extracted 272 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/2-bundesliga2.txt
+2025-05-09 04:05:35,451 - INFO - Extracted 306 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/4-regionalliga-nordost.txt
+2025-05-09 04:05:35,454 - INFO - Extracted 289 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/4-regionalliga-nord.txt
+2025-05-09 04:05:35,458 - INFO - Extracted 361 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/3-liga3.txt
+2025-05-09 04:05:35,460 - INFO - Extracted 306 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/4-regionalliga-suedwest.txt
+2025-05-09 04:05:35,461 - INFO - Extracted 61 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/cup.txt
+2025-05-09 04:05:35,463 - INFO - Extracted 289 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/de-deutschland/2024-25/1-bundesliga.txt
+2025-05-09 04:05:35,467 - INFO - Extracted 342 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/2-serieb.txt
+2025-05-09 04:05:35,470 - INFO - Extracted 342 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/3-seriec_a.txt
+2025-05-09 04:05:35,474 - INFO - Extracted 361 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/3-seriec_b.txt
+2025-05-09 04:05:35,478 - INFO - Extracted 304 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/3-seriec_c.txt
+2025-05-09 04:05:35,478 - INFO - Extracted 42 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/cup.txt
+2025-05-09 04:05:35,482 - INFO - Extracted 361 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/it-italy/2024-25/1-seriea.txt
+2025-05-09 04:05:35,484 - INFO - Extracted 172 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/champions-league/2024-25/el.txt
+2025-05-09 04:05:35,485 - INFO - Extracted 137 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/champions-league/2024-25/conf.txt
+2025-05-09 04:05:35,487 - INFO - Extracted 166 fixtures from /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw/champions-league/2024-25/cl.txt
+2025-05-09 04:05:35,487 - INFO - Total fixtures parsed: 8095
+2025-05-09 04:05:35,487 - INFO - Starting database update...
+2025-05-09 04:05:35,488 - INFO - Processing 28 unique competitions
+2025-05-09 04:05:35,549 - INFO - Creating new competition: FA Cup (England)
+2025-05-09 04:05:35,553 - INFO - Creating new competition: Copa del Rey (Spain)
+2025-05-09 04:05:35,554 - INFO - Creating new competition: Serie C - Group B (Italy)
+2025-05-09 04:05:35,555 - INFO - Creating new competition: EFL Cup (England)
+2025-05-09 04:05:35,557 - INFO - Creating new competition: Serie C - Group A (Italy)
+2025-05-09 04:05:35,559 - INFO - Creating new competition: Copa del Rey (Italy)
+2025-05-09 04:05:35,560 - INFO - Creating new competition: 4 Regionalliga West (Germany)
+2025-05-09 04:05:35,562 - INFO - Creating new competition: 4 Regionalliga Nord (Germany)
+2025-05-09 04:05:35,563 - INFO - Creating new competition: 4 Regionalliga Nordost (Germany)
+2025-05-09 04:05:35,564 - INFO - Creating new competition: Conf (Europe)
+2025-05-09 04:05:35,566 - INFO - Creating new competition: Copa del Rey (Germany)
+2025-05-09 04:05:35,567 - INFO - Creating new competition: Serie C - Group C (Italy)
+2025-05-09 04:05:35,568 - INFO - Creating new competition: 4 Regionalliga Bayern (Germany)
+2025-05-09 04:05:35,570 - INFO - Creating new competition: 4 Regionalliga Suedwest (Germany)
+2025-05-09 04:05:35,574 - INFO - Processing 28 unique seasons
+2025-05-09 04:05:35,576 - INFO - Creating new season: 2024-25 for Copa del Rey
+2025-05-09 04:05:35,578 - INFO - Creating new season: 2024-25 for EFL Cup
+2025-05-09 04:05:35,579 - INFO - Creating new season: 2024-25 for Serie C - Group C
+2025-05-09 04:05:35,580 - INFO - Creating new season: 2024-25 for 4 Regionalliga Bayern
+2025-05-09 04:05:35,582 - INFO - Creating new season: 2024-25 for Copa del Rey
+2025-05-09 04:05:35,583 - INFO - Creating new season: 2024-25 for 4 Regionalliga Suedwest
+2025-05-09 04:05:35,590 - INFO - Creating new season: 2024-25 for Copa del Rey
+2025-05-09 04:05:35,592 - INFO - Creating new season: 2024-25 for Serie C - Group B
+2025-05-09 04:05:35,593 - INFO - Creating new season: 2024-25 for Serie C - Group A
+2025-05-09 04:05:35,595 - INFO - Creating new season: 2024-25 for 4 Regionalliga West
+2025-05-09 04:05:35,597 - INFO - Creating new season: 2024-25 for 4 Regionalliga Nord
+2025-05-09 04:05:35,599 - INFO - Creating new season: 2024-25 for 4 Regionalliga Nordost
+2025-05-09 04:05:35,601 - INFO - Creating new season: 2024-25 for Conf
+2025-05-09 04:05:35,602 - INFO - Creating new season: 2024-25 for FA Cup
+2025-05-09 04:05:35,605 - INFO - Processing 699 unique clubs
+2025-05-09 04:05:35,612 - INFO - Creating new club: VfL Bochum
+2025-05-09 04:05:35,615 - INFO - Creating new team for club: VfL Bochum
+2025-05-09 04:05:35,617 - INFO - Creating new club: Alfreton Town
+2025-05-09 04:05:35,618 - INFO - Creating new team for club: Alfreton Town
+2025-05-09 04:05:35,621 - INFO - Creating new club: Lleida Esportiu
+2025-05-09 04:05:35,622 - INFO - Creating new team for club: Lleida Esportiu
+2025-05-09 04:05:35,636 - INFO - Creating new club: CD Tudelano
+2025-05-09 04:05:35,638 - INFO - Creating new team for club: CD Tudelano
+2025-05-09 04:05:35,643 - INFO - Creating new club: Real Sociedad (ESP)
+2025-05-09 04:05:35,645 - INFO - Creating new team for club: Real Sociedad (ESP)
+2025-05-09 04:05:35,646 - INFO - Creating new club: UB Conquense
+2025-05-09 04:05:35,647 - INFO - Creating new team for club: UB Conquense
+2025-05-09 04:05:35,654 - INFO - Creating new club: ACR Messina              [cancelled]
+2025-05-09 04:05:35,656 - INFO - Creating new team for club: ACR Messina              [cancelled]
+2025-05-09 04:05:35,658 - INFO - Creating new club: Sheffield Wednesday
+2025-05-09 04:05:35,659 - INFO - Creating new team for club: Sheffield Wednesday
+2025-05-09 04:05:35,663 - INFO - Creating new club: Ontiñena CF
+2025-05-09 04:05:35,664 - INFO - Creating new team for club: Ontiñena CF
+2025-05-09 04:05:35,669 - INFO - Creating new club: 1. FC Köln II            [cancelled]
+2025-05-09 04:05:35,671 - INFO - Creating new team for club: 1. FC Köln II            [cancelled]
+2025-05-09 04:05:35,674 - INFO - Creating new club: Real Madrid
+2025-05-09 04:05:35,675 - INFO - Creating new team for club: Real Madrid
+2025-05-09 04:05:35,680 - INFO - Creating new club: Blackburn Rovers
+2025-05-09 04:05:35,682 - INFO - Creating new team for club: Blackburn Rovers
+2025-05-09 04:05:35,683 - INFO - Creating new club: Yeovil Town
+2025-05-09 04:05:35,684 - INFO - Creating new team for club: Yeovil Town
+2025-05-09 04:05:35,686 - INFO - Creating new club: Eastleigh FC
+2025-05-09 04:05:35,687 - INFO - Creating new team for club: Eastleigh FC
+2025-05-09 04:05:35,692 - INFO - Creating new club: Cavese                   [cancelled]
+2025-05-09 04:05:35,694 - INFO - Creating new team for club: Cavese                   [cancelled]
+2025-05-09 04:05:35,696 - INFO - Creating new club: 1899 Hoffenheim
+2025-05-09 04:05:35,697 - INFO - Creating new team for club: 1899 Hoffenheim
+2025-05-09 04:05:35,699 - INFO - Creating new club: Scarborough Athletic FC
+2025-05-09 04:05:35,701 - INFO - Creating new team for club: Scarborough Athletic FC
+2025-05-09 04:05:35,702 - INFO - Creating new club: Dinamo Kiev (UKR)
+2025-05-09 04:05:35,704 - INFO - Creating new team for club: Dinamo Kiev (UKR)
+2025-05-09 04:05:35,709 - INFO - Creating new club: Rapid Wien (AUT)
+2025-05-09 04:05:35,711 - INFO - Creating new team for club: Rapid Wien (AUT)
+2025-05-09 04:05:35,712 - INFO - Creating new club: Derby County
+2025-05-09 04:05:35,714 - INFO - Creating new team for club: Derby County
+2025-05-09 04:05:35,716 - INFO - Creating new club: Fortuna Köln             [cancelled]
+2025-05-09 04:05:35,717 - INFO - Creating new team for club: Fortuna Köln             [cancelled]
+2025-05-09 04:05:35,722 - INFO - Creating new club: Maidstone United
+2025-05-09 04:05:35,724 - INFO - Creating new team for club: Maidstone United
+2025-05-09 04:05:35,729 - INFO - Creating new club: FC Schalke 04 II         [cancelled]
+2025-05-09 04:05:35,731 - INFO - Creating new team for club: FC Schalke 04 II         [cancelled]
+2025-05-09 04:05:35,732 - INFO - Creating new club: TSC Bačka Topola (SRB)
+2025-05-09 04:05:35,734 - INFO - Creating new team for club: TSC Bačka Topola (SRB)
+2025-05-09 04:05:35,735 - INFO - Creating new club: OGC Nice (FRA)
+2025-05-09 04:05:35,737 - INFO - Creating new team for club: OGC Nice (FRA)
+2025-05-09 04:05:35,738 - INFO - Creating new club: Lazio Roma
+2025-05-09 04:05:35,740 - INFO - Creating new team for club: Lazio Roma
+2025-05-09 04:05:35,752 - INFO - Creating new club: Benevento Calcio         [cancelled]
+2025-05-09 04:05:35,754 - INFO - Creating new team for club: Benevento Calcio         [cancelled]
+2025-05-09 04:05:35,757 - INFO - Creating new club: HJK Helsinki (FIN)
+2025-05-09 04:05:35,758 - INFO - Creating new team for club: HJK Helsinki (FIN)
+2025-05-09 04:05:35,761 - INFO - Creating new club: 1. FC Schweinfurt 05     [postponed]
+2025-05-09 04:05:35,763 - INFO - Creating new team for club: 1. FC Schweinfurt 05     [postponed]
+2025-05-09 04:05:35,765 - INFO - Creating new club: CD Numancia
+2025-05-09 04:05:35,767 - INFO - Creating new team for club: CD Numancia
+2025-05-09 04:05:35,774 - INFO - Creating new club: Viktoria Plzeň (CZE)
+2025-05-09 04:05:35,775 - INFO - Creating new team for club: Viktoria Plzeň (CZE)
+2025-05-09 04:05:35,777 - INFO - Creating new club: EDF Logroño
+2025-05-09 04:05:35,778 - INFO - Creating new team for club: EDF Logroño
+2025-05-09 04:05:35,781 - INFO - Creating new club: Hednesford Town
+2025-05-09 04:05:35,782 - INFO - Creating new team for club: Hednesford Town
+2025-05-09 04:05:35,784 - INFO - Creating new club: FC Noah (ARM)
+2025-05-09 04:05:35,785 - INFO - Creating new team for club: FC Noah (ARM)
+2025-05-09 04:05:35,787 - INFO - Creating new club: Jagiellonia Białystok (POL)
+2025-05-09 04:05:35,788 - INFO - Creating new team for club: Jagiellonia Białystok (POL)
+2025-05-09 04:05:35,791 - INFO - Creating new club: Hartlepool United
+2025-05-09 04:05:35,792 - INFO - Creating new team for club: Hartlepool United
+2025-05-09 04:05:35,798 - INFO - Creating new club: FC Andorra
+2025-05-09 04:05:35,799 - INFO - Creating new team for club: FC Andorra
+2025-05-09 04:05:35,801 - INFO - Creating new club: Dinamo Minsk (BLR)
+2025-05-09 04:05:35,803 - INFO - Creating new team for club: Dinamo Minsk (BLR)
+2025-05-09 04:05:35,804 - INFO - Creating new club: UD Llanera
+2025-05-09 04:05:35,805 - INFO - Creating new team for club: UD Llanera
+2025-05-09 04:05:35,807 - INFO - Creating new club: Oldham Athletic
+2025-05-09 04:05:35,808 - INFO - Creating new team for club: Oldham Athletic
+2025-05-09 04:05:35,815 - INFO - Creating new club: SS Monopoli 1966         [cancelled]
+2025-05-09 04:05:35,817 - INFO - Creating new team for club: SS Monopoli 1966         [cancelled]
+2025-05-09 04:05:35,832 - INFO - Creating new club: Bergantiños FC
+2025-05-09 04:05:35,834 - INFO - Creating new team for club: Bergantiños FC
+2025-05-09 04:05:35,840 - INFO - Creating new club: FV Illertissen
+2025-05-09 04:05:35,842 - INFO - Creating new team for club: FV Illertissen
+2025-05-09 04:05:35,846 - INFO - Creating new club: UD Lanzarote
+2025-05-09 04:05:35,847 - INFO - Creating new team for club: UD Lanzarote
+2025-05-09 04:05:35,852 - INFO - Creating new club: FC Porto (POR)
+2025-05-09 04:05:35,854 - INFO - Creating new team for club: FC Porto (POR)
+2025-05-09 04:05:35,860 - INFO - Creating new club: FC 08 Homburg
+2025-05-09 04:05:35,862 - INFO - Creating new team for club: FC 08 Homburg
+2025-05-09 04:05:35,864 - INFO - Creating new club: SC Paderborn 07 II       [cancelled]
+2025-05-09 04:05:35,865 - INFO - Creating new team for club: SC Paderborn 07 II       [cancelled]
+2025-05-09 04:05:35,868 - INFO - Creating new club: Zamora CF
+2025-05-09 04:05:35,869 - INFO - Creating new team for club: Zamora CF
+2025-05-09 04:05:35,871 - INFO - Creating new club: FK Mladá Boleslav (CZE)
+2025-05-09 04:05:35,872 - INFO - Creating new team for club: FK Mladá Boleslav (CZE)
+2025-05-09 04:05:35,878 - INFO - Creating new club: UD SS Reyes
+2025-05-09 04:05:35,879 - INFO - Creating new team for club: UD SS Reyes
+2025-05-09 04:05:35,880 - INFO - Creating new club: Rot-Weiß Oberhausen      [cancelled]
+2025-05-09 04:05:35,882 - INFO - Creating new team for club: Rot-Weiß Oberhausen      [cancelled]
+2025-05-09 04:05:35,889 - INFO - Creating new club: Bahlinger SC
+2025-05-09 04:05:35,890 - INFO - Creating new team for club: Bahlinger SC
+2025-05-09 04:05:35,892 - INFO - Creating new club: Malmö FF (SWE)
+2025-05-09 04:05:35,894 - INFO - Creating new team for club: Malmö FF (SWE)
+2025-05-09 04:05:35,896 - INFO - Creating new club: Luton Town
+2025-05-09 04:05:35,898 - INFO - Creating new team for club: Luton Town
+2025-05-09 04:05:35,905 - INFO - Creating new club: York City
+2025-05-09 04:05:35,907 - INFO - Creating new team for club: York City
+2025-05-09 04:05:35,910 - INFO - Creating new club: NK Celje (SVN)
+2025-05-09 04:05:35,911 - INFO - Creating new team for club: NK Celje (SVN)
+2025-05-09 04:05:35,932 - INFO - Creating new club: Virtus Verona
+2025-05-09 04:05:35,934 - INFO - Creating new team for club: Virtus Verona
+2025-05-09 04:05:35,939 - INFO - Creating new club: PFC Ludogorets Razgrad (BUL)
+2025-05-09 04:05:35,940 - INFO - Creating new team for club: PFC Ludogorets Razgrad (BUL)
+2025-05-09 04:05:35,944 - INFO - Creating new club: Solihull Moors
+2025-05-09 04:05:35,946 - INFO - Creating new team for club: Solihull Moors
+2025-05-09 04:05:35,953 - INFO - Creating new club: Juve Stabia
+2025-05-09 04:05:35,954 - INFO - Creating new team for club: Juve Stabia
+2025-05-09 04:05:35,956 - INFO - Creating new club: Fortuna Düsseldorf II    [cancelled]
+2025-05-09 04:05:35,958 - INFO - Creating new team for club: Fortuna Düsseldorf II    [cancelled]
+2025-05-09 04:05:35,963 - INFO - Creating new club: CD Laredo
+2025-05-09 04:05:35,965 - INFO - Creating new team for club: CD Laredo
+2025-05-09 04:05:35,967 - INFO - Creating new club: Ceuta 6 de Junio
+2025-05-09 04:05:35,969 - INFO - Creating new team for club: Ceuta 6 de Junio
+2025-05-09 04:05:35,971 - INFO - Creating new club: CD Alavés
+2025-05-09 04:05:35,973 - INFO - Creating new team for club: CD Alavés
+2025-05-09 04:05:35,977 - INFO - Creating new club: UD Poblense
+2025-05-09 04:05:35,983 - INFO - Creating new team for club: UD Poblense
+2025-05-09 04:05:35,985 - INFO - Creating new club: Team Altamura
+2025-05-09 04:05:35,987 - INFO - Creating new team for club: Team Altamura
+2025-05-09 04:05:35,994 - INFO - Creating new club: SpVgg Bayreuth
+2025-05-09 04:05:35,996 - INFO - Creating new team for club: SpVgg Bayreuth
+2025-05-09 04:05:36,004 - INFO - Creating new club: Hull City
+2025-05-09 04:05:36,005 - INFO - Creating new team for club: Hull City
+2025-05-09 04:05:36,008 - INFO - Creating new club: UP Langreo
+2025-05-09 04:05:36,010 - INFO - Creating new team for club: UP Langreo
+2025-05-09 04:05:36,011 - INFO - Creating new club: US Avellino              [cancelled]
+2025-05-09 04:05:36,013 - INFO - Creating new team for club: US Avellino              [cancelled]
+2025-05-09 04:05:36,014 - INFO - Creating new club: Athletic Club (ESP)
+2025-05-09 04:05:36,016 - INFO - Creating new team for club: Athletic Club (ESP)
+2025-05-09 04:05:36,017 - INFO - Creating new club: Melilla CD
+2025-05-09 04:05:36,019 - INFO - Creating new team for club: Melilla CD
+2025-05-09 04:05:36,021 - INFO - Creating new club: MSV Duisburg             [cancelled]
+2025-05-09 04:05:36,023 - INFO - Creating new team for club: MSV Duisburg             [cancelled]
+2025-05-09 04:05:36,031 - INFO - Creating new club: PAOK Saloniki (GRE)
+2025-05-09 04:05:36,033 - INFO - Creating new team for club: PAOK Saloniki (GRE)
+2025-05-09 04:05:36,034 - INFO - Creating new club: Preston North End
+2025-05-09 04:05:36,036 - INFO - Creating new team for club: Preston North End
+2025-05-09 04:05:36,045 - INFO - Creating new club: Leicester City
+2025-05-09 04:05:36,046 - INFO - Creating new team for club: Leicester City
+2025-05-09 04:05:36,048 - INFO - Creating new club: Bayer Leverkusen
+2025-05-09 04:05:36,049 - INFO - Creating new team for club: Bayer Leverkusen
+2025-05-09 04:05:36,058 - INFO - Creating new club: RC Celta
+2025-05-09 04:05:36,060 - INFO - Creating new team for club: RC Celta
+2025-05-09 04:05:36,064 - INFO - Creating new club: Wuppertaler SV           [cancelled]
+2025-05-09 04:05:36,066 - INFO - Creating new team for club: Wuppertaler SV           [cancelled]
+2025-05-09 04:05:36,067 - INFO - Creating new club: SGV Freiberg
+2025-05-09 04:05:36,069 - INFO - Creating new team for club: SGV Freiberg
+2025-05-09 04:05:36,071 - INFO - Creating new club: SD Amorebieta
+2025-05-09 04:05:36,072 - INFO - Creating new team for club: SD Amorebieta
+2025-05-09 04:05:36,074 - INFO - Creating new club: Djurgårdens IF (SWE)
+2025-05-09 04:05:36,075 - INFO - Creating new team for club: Djurgårdens IF (SWE)
+2025-05-09 04:05:36,079 - INFO - Creating new club: Yeclano Deportivo
+2025-05-09 04:05:36,083 - INFO - Creating new team for club: Yeclano Deportivo
+2025-05-09 04:05:36,088 - INFO - Creating new club: Worthing FC
+2025-05-09 04:05:36,089 - INFO - Creating new team for club: Worthing FC
+2025-05-09 04:05:36,100 - INFO - Creating new club: VSG Altglienicke
+2025-05-09 04:05:36,101 - INFO - Creating new team for club: VSG Altglienicke
+2025-05-09 04:05:36,111 - INFO - Creating new club: Maidenhead United
+2025-05-09 04:05:36,113 - INFO - Creating new team for club: Maidenhead United
+2025-05-09 04:05:36,129 - INFO - Creating new club: FC St. Gallen (SUI)
+2025-05-09 04:05:36,130 - INFO - Creating new team for club: FC St. Gallen (SUI)
+2025-05-09 04:05:36,147 - INFO - Creating new club: Sportfreunde Lotte       [cancelled]
+2025-05-09 04:05:36,149 - INFO - Creating new team for club: Sportfreunde Lotte       [cancelled]
+2025-05-09 04:05:36,150 - INFO - Creating new club: Vitória Guimarães (POR)
+2025-05-09 04:05:36,152 - INFO - Creating new team for club: Vitória Guimarães (POR)
+2025-05-09 04:05:36,162 - INFO - Creating new club: VfV Hildesheim
+2025-05-09 04:05:36,163 - INFO - Creating new team for club: VfV Hildesheim
+2025-05-09 04:05:36,170 - INFO - Creating new club: 1899 Hoffenheim (GER)
+2025-05-09 04:05:36,172 - INFO - Creating new team for club: 1899 Hoffenheim (GER)
+2025-05-09 04:05:36,174 - INFO - Creating new club: Aston Villa
+2025-05-09 04:05:36,175 - INFO - Creating new team for club: Aston Villa
+2025-05-09 04:05:36,179 - INFO - Creating new club: Cercle Brugge (BEL)
+2025-05-09 04:05:36,180 - INFO - Creating new team for club: Cercle Brugge (BEL)
+2025-05-09 04:05:36,199 - INFO - Creating new club: Shamrock Rovers (IRL)
+2025-05-09 04:05:36,200 - INFO - Creating new team for club: Shamrock Rovers (IRL)
+2025-05-09 04:05:36,203 - INFO - Creating new club: Werder Bremen
+2025-05-09 04:05:36,205 - INFO - Creating new team for club: Werder Bremen
+2025-05-09 04:05:36,206 - INFO - Creating new club: Southend United
+2025-05-09 04:05:36,208 - INFO - Creating new team for club: Southend United
+2025-05-09 04:05:36,213 - INFO - Creating new club: FC Twente (NED)
+2025-05-09 04:05:36,215 - INFO - Creating new team for club: FC Twente (NED)
+2025-05-09 04:05:36,227 - INFO - Creating new club: Omonia Nikosia (CYP)
+2025-05-09 04:05:36,228 - INFO - Creating new team for club: Omonia Nikosia (CYP)
+2025-05-09 04:05:36,231 - INFO - Creating new club: Forest Green Rovers
+2025-05-09 04:05:36,233 - INFO - Creating new team for club: Forest Green Rovers
+2025-05-09 04:05:36,237 - INFO - Creating new club: SG Barockstadt Fulda-Lehnerz
+2025-05-09 04:05:36,239 - INFO - Creating new team for club: SG Barockstadt Fulda-Lehnerz
+2025-05-09 04:05:36,247 - INFO - Creating new club: FCSB (ROU)
+2025-05-09 04:05:36,248 - INFO - Creating new team for club: FCSB (ROU)
+2025-05-09 04:05:36,251 - INFO - Creating new club: Águilas FC
+2025-05-09 04:05:36,252 - INFO - Creating new team for club: Águilas FC
+2025-05-09 04:05:36,254 - INFO - Creating new club: CD Estepona
+2025-05-09 04:05:36,255 - INFO - Creating new team for club: CD Estepona
+2025-05-09 04:05:36,272 - INFO - Creating new club: AD Ceuta FC
+2025-05-09 04:05:36,274 - INFO - Creating new team for club: AD Ceuta FC
+2025-05-09 04:05:36,275 - INFO - Creating new club: VfR Aalen
+2025-05-09 04:05:36,277 - INFO - Creating new team for club: VfR Aalen
+2025-05-09 04:05:36,285 - INFO - Creating new club: Barakaldo CF
+2025-05-09 04:05:36,287 - INFO - Creating new team for club: Barakaldo CF
+2025-05-09 04:05:36,290 - INFO - Creating new club: Rushall Olympic
+2025-05-09 04:05:36,292 - INFO - Creating new team for club: Rushall Olympic
+2025-05-09 04:05:36,293 - INFO - Creating new club: 1. FC Heidenheim 1846 (GER)
+2025-05-09 04:05:36,294 - INFO - Creating new team for club: 1. FC Heidenheim 1846 (GER)
+2025-05-09 04:05:36,295 - INFO - Creating new club: APOEL Nikosia (CYP)
+2025-05-09 04:05:36,297 - INFO - Creating new team for club: APOEL Nikosia (CYP)
+2025-05-09 04:05:36,303 - INFO - Creating new club: Cultural Leonesa
+2025-05-09 04:05:36,305 - INFO - Creating new team for club: Cultural Leonesa
+2025-05-09 04:05:36,306 - INFO - Creating new club: Mantova 1911 SSD
+2025-05-09 04:05:36,307 - INFO - Creating new team for club: Mantova 1911 SSD
+2025-05-09 04:05:36,308 - INFO - Creating new club: Norwich City
+2025-05-09 04:05:36,310 - INFO - Creating new team for club: Norwich City
+2025-05-09 04:05:36,319 - INFO - Creating new club: Heart of Midlothian (SCO)
+2025-05-09 04:05:36,321 - INFO - Creating new team for club: Heart of Midlothian (SCO)
+2025-05-09 04:05:36,329 - INFO - Creating new club: Espanyol Barcelona
+2025-05-09 04:05:36,330 - INFO - Creating new team for club: Espanyol Barcelona
+2025-05-09 04:05:36,335 - INFO - Creating new club: FSV Frankfurt
+2025-05-09 04:05:36,336 - INFO - Creating new team for club: FSV Frankfurt
+2025-05-09 04:05:36,339 - INFO - Creating new club: LASK (AUT)
+2025-05-09 04:05:36,340 - INFO - Creating new team for club: LASK (AUT)
+2025-05-09 04:05:36,341 - INFO - Creating new club: Atalanta
+2025-05-09 04:05:36,343 - INFO - Creating new team for club: Atalanta
+2025-05-09 04:05:36,346 - INFO - Creating new club: Galatasaray (TUR)
+2025-05-09 04:05:36,348 - INFO - Creating new team for club: Galatasaray (TUR)
+2025-05-09 04:05:36,349 - INFO - Creating new club: Juventus FC (ITA)
+2025-05-09 04:05:36,350 - INFO - Creating new team for club: Juventus FC (ITA)
+2025-05-09 04:05:36,351 - INFO - Creating new club: FK RFS (LVA)
+2025-05-09 04:05:36,353 - INFO - Creating new team for club: FK RFS (LVA)
+2025-05-09 04:05:36,354 - INFO - Creating new club: Horsham FC
+2025-05-09 04:05:36,355 - INFO - Creating new team for club: Horsham FC
+2025-05-09 04:05:36,360 - INFO - Creating new club: Real Betis
+2025-05-09 04:05:36,362 - INFO - Creating new team for club: Real Betis
+2025-05-09 04:05:36,363 - INFO - Creating new club: Cardiff City
+2025-05-09 04:05:36,364 - INFO - Creating new team for club: Cardiff City
+2025-05-09 04:05:36,371 - INFO - Creating new club: Real Jaén
+2025-05-09 04:05:36,372 - INFO - Creating new team for club: Real Jaén
+2025-05-09 04:05:36,379 - INFO - Creating new club: Bristol City
+2025-05-09 04:05:36,380 - INFO - Creating new team for club: Bristol City
+2025-05-09 04:05:36,382 - INFO - Creating new club: Atlético Madrid
+2025-05-09 04:05:36,383 - INFO - Creating new team for club: Atlético Madrid
+2025-05-09 04:05:36,388 - INFO - Creating new club: CD Móstoles URJC
+2025-05-09 04:05:36,390 - INFO - Creating new team for club: CD Móstoles URJC
+2025-05-09 04:05:36,392 - INFO - Creating new club: Juventus II              [cancelled]
+2025-05-09 04:05:36,394 - INFO - Creating new team for club: Juventus II              [cancelled]
+2025-05-09 04:05:36,397 - INFO - Creating new club: IF Elfsborg (SWE)
+2025-05-09 04:05:36,398 - INFO - Creating new team for club: IF Elfsborg (SWE)
+2025-05-09 04:05:36,400 - INFO - Creating new club: Unionistas CF
+2025-05-09 04:05:36,401 - INFO - Creating new team for club: Unionistas CF
+2025-05-09 04:05:36,402 - INFO - Creating new club: SC Wiedenbrück           [cancelled]
+2025-05-09 04:05:36,404 - INFO - Creating new team for club: SC Wiedenbrück           [cancelled]
+2025-05-09 04:05:36,409 - INFO - Creating new club: CD Baztán
+2025-05-09 04:05:36,411 - INFO - Creating new team for club: CD Baztán
+2025-05-09 04:05:36,421 - INFO - Creating new club: Salamanca CF UDS
+2025-05-09 04:05:36,423 - INFO - Creating new team for club: Salamanca CF UDS
+2025-05-09 04:05:36,425 - INFO - Creating new club: Utebo FC
+2025-05-09 04:05:36,426 - INFO - Creating new team for club: Utebo FC
+2025-05-09 04:05:36,428 - INFO - Creating new club: Ciudad de Lucena
+2025-05-09 04:05:36,429 - INFO - Creating new team for club: Ciudad de Lucena
+2025-05-09 04:05:36,432 - INFO - Creating new club: KFC Uerdingen 05         [cancelled]
+2025-05-09 04:05:36,434 - INFO - Creating new team for club: KFC Uerdingen 05         [cancelled]
+2025-05-09 04:05:36,436 - INFO - Creating new club: Manises CF
+2025-05-09 04:05:36,438 - INFO - Creating new team for club: Manises CF
+2025-05-09 04:05:36,439 - INFO - Creating new club: Orihuela CF
+2025-05-09 04:05:36,440 - INFO - Creating new team for club: Orihuela CF
+2025-05-09 04:05:36,443 - INFO - Creating new club: CD Alfaro
+2025-05-09 04:05:36,445 - INFO - Creating new team for club: CD Alfaro
+2025-05-09 04:05:36,455 - INFO - Creating new club: SD Ejea
+2025-05-09 04:05:36,456 - INFO - Creating new team for club: SD Ejea
+2025-05-09 04:05:36,459 - INFO - Creating new club: 1. FC Düren              [cancelled]
+2025-05-09 04:05:36,460 - INFO - Creating new team for club: 1. FC Düren              [cancelled]
+2025-05-09 04:05:36,463 - INFO - Creating new club: Kettering Town
+2025-05-09 04:05:36,465 - INFO - Creating new team for club: Kettering Town
+2025-05-09 04:05:36,467 - INFO - Creating new club: FK Crvena Zvezda (SRB)
+2025-05-09 04:05:36,469 - INFO - Creating new team for club: FK Crvena Zvezda (SRB)
+2025-05-09 04:05:36,470 - INFO - Creating new club: Casertana FC             [cancelled]
+2025-05-09 04:05:36,472 - INFO - Creating new team for club: Casertana FC             [cancelled]
+2025-05-09 04:05:36,477 - INFO - Creating new club: CS Petrocub (MDA)
+2025-05-09 04:05:36,478 - INFO - Creating new team for club: CS Petrocub (MDA)
+2025-05-09 04:05:36,488 - INFO - Creating new club: Larne FC (NIR)
+2025-05-09 04:05:36,490 - INFO - Creating new team for club: Larne FC (NIR)
+2025-05-09 04:05:36,494 - INFO - Creating new club: West Bromwich Albion
+2025-05-09 04:05:36,495 - INFO - Creating new team for club: West Bromwich Albion
+2025-05-09 04:05:36,497 - INFO - Creating new club: Türkspor Dortmund
+2025-05-09 04:05:36,498 - INFO - Creating new team for club: Türkspor Dortmund
+2025-05-09 04:05:36,499 - INFO - Creating new club: Olimpija Ljubljana (SVN)
+2025-05-09 04:05:36,501 - INFO - Creating new team for club: Olimpija Ljubljana (SVN)
+2025-05-09 04:05:36,504 - INFO - Creating new club: Eintracht Hohkeppel
+2025-05-09 04:05:36,506 - INFO - Creating new team for club: Eintracht Hohkeppel
+2025-05-09 04:05:36,508 - INFO - Creating new club: Halifax Town
+2025-05-09 04:05:36,510 - INFO - Creating new team for club: Halifax Town
+2025-05-09 04:05:36,516 - INFO - Creating new club: Altrincham FC
+2025-05-09 04:05:36,518 - INFO - Creating new team for club: Altrincham FC
+2025-05-09 04:05:36,521 - INFO - Creating new club: Trapani Calcio           [cancelled]
+2025-05-09 04:05:36,522 - INFO - Creating new team for club: Trapani Calcio           [cancelled]
+2025-05-09 04:05:36,525 - INFO - Creating new club: UE Sant Andreu
+2025-05-09 04:05:36,526 - INFO - Creating new team for club: UE Sant Andreu
+2025-05-09 04:05:36,528 - INFO - Creating new club: Ourense CF
+2025-05-09 04:05:36,529 - INFO - Creating new team for club: Ourense CF
+2025-05-09 04:05:36,536 - INFO - Creating new club: CD Cuarte
+2025-05-09 04:05:36,538 - INFO - Creating new team for club: CD Cuarte
+2025-05-09 04:05:36,540 - INFO - Creating new club: FC København (DEN)
+2025-05-09 04:05:36,542 - INFO - Creating new team for club: FC København (DEN)
+2025-05-09 04:05:36,544 - INFO - Creating new club: Tonbridge Angels
+2025-05-09 04:05:36,546 - INFO - Creating new team for club: Tonbridge Angels
+2025-05-09 04:05:36,549 - INFO - Creating new club: UE Olot
+2025-05-09 04:05:36,550 - INFO - Creating new team for club: UE Olot
+2025-05-09 04:05:36,563 - INFO - Creating new club: FC Gütersloh             [cancelled]
+2025-05-09 04:05:36,564 - INFO - Creating new team for club: FC Gütersloh             [cancelled]
+2025-05-09 04:05:36,575 - INFO - Creating new club: TSV Buchbach
+2025-05-09 04:05:36,577 - INFO - Creating new team for club: TSV Buchbach
+2025-05-09 04:05:36,578 - INFO - Creating new club: UM Escobedo
+2025-05-09 04:05:36,580 - INFO - Creating new team for club: UM Escobedo
+2025-05-09 04:05:36,586 - INFO - Creating new club: CD Extremadura
+2025-05-09 04:05:36,587 - INFO - Creating new team for club: CD Extremadura
+2025-05-09 04:05:36,590 - INFO - Creating new club: Team Altamura            [cancelled]
+2025-05-09 04:05:36,592 - INFO - Creating new team for club: Team Altamura            [cancelled]
+2025-05-09 04:05:36,596 - INFO - Creating new club: Gimnàstic de Tarragona
+2025-05-09 04:05:36,597 - INFO - Creating new team for club: Gimnàstic de Tarragona
+2025-05-09 04:05:36,603 - INFO - Creating new club: RSC Anderlecht (BEL)
+2025-05-09 04:05:36,604 - INFO - Creating new team for club: RSC Anderlecht (BEL)
+2025-05-09 04:05:36,610 - INFO - Creating new club: TSV Schott Mainz
+2025-05-09 04:05:36,611 - INFO - Creating new team for club: TSV Schott Mainz
+2025-05-09 04:05:36,620 - INFO - Creating new club: Hércules CF
+2025-05-09 04:05:36,622 - INFO - Creating new team for club: Hércules CF
+2025-05-09 04:05:36,624 - INFO - Creating new club: FC Crotone               [cancelled]
+2025-05-09 04:05:36,626 - INFO - Creating new team for club: FC Crotone               [cancelled]
+2025-05-09 04:05:36,631 - INFO - Creating new club: AD Alcorcón
+2025-05-09 04:05:36,632 - INFO - Creating new team for club: AD Alcorcón
+2025-05-09 04:05:36,634 - INFO - Creating new club: Lazio Roma (ITA)
+2025-05-09 04:05:36,635 - INFO - Creating new team for club: Lazio Roma (ITA)
+2025-05-09 04:05:36,639 - INFO - Creating new club: Xerez CD
+2025-05-09 04:05:36,640 - INFO - Creating new team for club: Xerez CD
+2025-05-09 04:05:36,642 - INFO - Creating new club: SV Rödinghausen          [cancelled]
+2025-05-09 04:05:36,643 - INFO - Creating new team for club: SV Rödinghausen          [cancelled]
+2025-05-09 04:05:36,648 - INFO - Creating new club: Marbella FC
+2025-05-09 04:05:36,650 - INFO - Creating new team for club: Marbella FC
+2025-05-09 04:05:36,652 - INFO - Creating new club: CD Aurrerá de Vitoria
+2025-05-09 04:05:36,654 - INFO - Creating new team for club: CD Aurrerá de Vitoria
+2025-05-09 04:05:36,657 - INFO - Creating new club: CE L'Hospitalet
+2025-05-09 04:05:36,659 - INFO - Creating new team for club: CE L'Hospitalet
+2025-05-09 04:05:36,665 - INFO - Creating new club: Inter
+2025-05-09 04:05:36,666 - INFO - Creating new team for club: Inter
+2025-05-09 04:05:36,672 - INFO - Creating new club: UD Logroñés
+2025-05-09 04:05:36,673 - INFO - Creating new team for club: UD Logroñés
+2025-05-09 04:05:36,675 - INFO - Creating new club: SD Compostela
+2025-05-09 04:05:36,677 - INFO - Creating new team for club: SD Compostela
+2025-05-09 04:05:36,681 - INFO - Creating new club: Real Valladolid
+2025-05-09 04:05:36,683 - INFO - Creating new team for club: Real Valladolid
+2025-05-09 04:05:36,688 - INFO - Creating new club: UD Ibiza
+2025-05-09 04:05:36,689 - INFO - Creating new team for club: UD Ibiza
+2025-05-09 04:05:36,693 - INFO - Creating new club: Bor. Mönchengladbach
+2025-05-09 04:05:36,697 - INFO - Creating new team for club: Bor. Mönchengladbach
+2025-05-09 04:05:36,701 - INFO - Creating new club: SV Rödinghausen
+2025-05-09 04:05:36,703 - INFO - Creating new team for club: SV Rödinghausen
+2025-05-09 04:05:36,704 - INFO - Creating new club: Foggia Calcio            [cancelled]
+2025-05-09 04:05:36,706 - INFO - Creating new team for club: Foggia Calcio            [cancelled]
+2025-05-09 04:05:36,710 - INFO - Creating new club: Latina Calcio            [cancelled]
+2025-05-09 04:05:36,712 - INFO - Creating new team for club: Latina Calcio            [cancelled]
+2025-05-09 04:05:36,717 - INFO - Creating new club: CF Badalona Futur
+2025-05-09 04:05:36,719 - INFO - Creating new team for club: CF Badalona Futur
+2025-05-09 04:05:36,727 - INFO - Creating new club: Potenza                  [cancelled]
+2025-05-09 04:05:36,729 - INFO - Creating new team for club: Potenza                  [cancelled]
+2025-05-09 04:05:36,731 - INFO - Creating new club: Selaya FC
+2025-05-09 04:05:36,732 - INFO - Creating new team for club: Selaya FC
+2025-05-09 04:05:36,737 - INFO - Creating new club: Olympique Lyonnais (FRA)
+2025-05-09 04:05:36,739 - INFO - Creating new team for club: Olympique Lyonnais (FRA)
+2025-05-09 04:05:36,747 - INFO - Creating new club: Harborough Town
+2025-05-09 04:05:36,748 - INFO - Creating new team for club: Harborough Town
+2025-05-09 04:05:36,760 - INFO - Creating new club: FC St. Pauli
+2025-05-09 04:05:36,761 - INFO - Creating new team for club: FC St. Pauli
+2025-05-09 04:05:36,764 - INFO - Creating new club: Gainsborough Trinity
+2025-05-09 04:05:36,766 - INFO - Creating new team for club: Gainsborough Trinity
+2025-05-09 04:05:36,770 - INFO - Creating new club: SD Ponferradina
+2025-05-09 04:05:36,772 - INFO - Creating new team for club: SD Ponferradina
+2025-05-09 04:05:36,776 - INFO - Creating new club: Bor. Mönchengladbach II  [cancelled]
+2025-05-09 04:05:36,778 - INFO - Creating new team for club: Bor. Mönchengladbach II  [cancelled]
+2025-05-09 04:05:36,780 - INFO - Creating new club: Eintracht Hohkeppel      [cancelled]
+2025-05-09 04:05:36,781 - INFO - Creating new team for club: Eintracht Hohkeppel      [cancelled]
+2025-05-09 04:05:36,786 - INFO - Creating new club: Bristol Rovers
+2025-05-09 04:05:36,788 - INFO - Creating new team for club: Bristol Rovers
+2025-05-09 04:05:36,790 - INFO - Creating new club: Oxford United
+2025-05-09 04:05:36,791 - INFO - Creating new team for club: Oxford United
+2025-05-09 04:05:36,797 - INFO - Creating new club: The New Saints (WAL)
+2025-05-09 04:05:36,799 - INFO - Creating new team for club: The New Saints (WAL)
+2025-05-09 04:05:36,808 - INFO - Creating new club: FC Gießen
+2025-05-09 04:05:36,811 - INFO - Creating new team for club: FC Gießen
+2025-05-09 04:05:36,813 - INFO - Creating new club: Parla Escuela
+2025-05-09 04:05:36,815 - INFO - Creating new team for club: Parla Escuela
+2025-05-09 04:05:36,819 - INFO - Creating new club: Rayo Vallecano
+2025-05-09 04:05:36,821 - INFO - Creating new team for club: Rayo Vallecano
+2025-05-09 04:05:36,822 - INFO - Creating new club: Bayern München
+2025-05-09 04:05:36,824 - INFO - Creating new team for club: Bayern München
+2025-05-09 04:05:36,825 - INFO - Creating new club: Real Sociedad
+2025-05-09 04:05:36,827 - INFO - Creating new team for club: Real Sociedad
+2025-05-09 04:05:36,830 - INFO - Creating new club: FC Midtjylland (DEN)
+2025-05-09 04:05:36,831 - INFO - Creating new team for club: FC Midtjylland (DEN)
+2025-05-09 04:05:36,835 - INFO - Creating new club: UD Barbastro
+2025-05-09 04:05:36,837 - INFO - Creating new team for club: UD Barbastro
+2025-05-09 04:05:36,841 - INFO - Creating new club: Qarabağ FK (AZE)
+2025-05-09 04:05:36,842 - INFO - Creating new team for club: Qarabağ FK (AZE)
+2025-05-09 04:05:36,847 - INFO - Creating new club: Brackley Town
+2025-05-09 04:05:36,848 - INFO - Creating new team for club: Brackley Town
+2025-05-09 04:05:36,851 - INFO - Creating new club: CD Ibiza
+2025-05-09 04:05:36,853 - INFO - Creating new team for club: CD Ibiza
+2025-05-09 04:05:36,855 - INFO - Creating new club: Paphos FC (CYP)
+2025-05-09 04:05:36,856 - INFO - Creating new team for club: Paphos FC (CYP)
+2025-05-09 04:05:36,872 - INFO - Creating new club: Gimnástica Segoviana
+2025-05-09 04:05:36,874 - INFO - Creating new team for club: Gimnástica Segoviana
+2025-05-09 04:05:36,875 - INFO - Creating new club: Bayer 04 Leverkusen (GER)
+2025-05-09 04:05:36,877 - INFO - Creating new team for club: Bayer 04 Leverkusen (GER)
+2025-05-09 04:05:36,878 - INFO - Creating new club: CF Sporting Mahonés
+2025-05-09 04:05:36,880 - INFO - Creating new team for club: CF Sporting Mahonés
+2025-05-09 04:05:36,882 - INFO - Creating new club: Borac Banja Luka (BIH)
+2025-05-09 04:05:36,884 - INFO - Creating new team for club: Borac Banja Luka (BIH)
+2025-05-09 04:05:36,894 - INFO - Creating new club: 1. FC Bocholt            [cancelled]
+2025-05-09 04:05:36,896 - INFO - Creating new team for club: 1. FC Bocholt            [cancelled]
+2025-05-09 04:05:36,901 - INFO - Creating new club: Calcio Catania           [cancelled]
+2025-05-09 04:05:36,903 - INFO - Creating new team for club: Calcio Catania           [cancelled]
+2025-05-09 04:05:36,915 - INFO - Creating new club: CP Cacereño
+2025-05-09 04:05:36,916 - INFO - Creating new team for club: CP Cacereño
+2025-05-09 04:05:36,918 - INFO - Creating new club: US Pergolettese
+2025-05-09 04:05:36,919 - INFO - Creating new team for club: US Pergolettese
+2025-05-09 04:05:36,925 - INFO - Creating new club: Deportiva Minera
+2025-05-09 04:05:36,926 - INFO - Creating new team for club: Deportiva Minera
+2025-05-09 04:05:37,054 - INFO - Processed 100/8095 fixtures
+2025-05-09 04:05:37,175 - INFO - Processed 200/8095 fixtures
+2025-05-09 04:05:37,270 - INFO - Processed 300/8095 fixtures
+2025-05-09 04:05:37,365 - INFO - Processed 400/8095 fixtures
+2025-05-09 04:05:37,462 - INFO - Processed 500/8095 fixtures
+2025-05-09 04:05:37,569 - INFO - Processed 600/8095 fixtures
+2025-05-09 04:05:37,669 - INFO - Processed 700/8095 fixtures
+2025-05-09 04:05:37,776 - INFO - Processed 800/8095 fixtures
+2025-05-09 04:05:37,862 - INFO - Processed 900/8095 fixtures
+2025-05-09 04:05:37,951 - INFO - Processed 1000/8095 fixtures
+2025-05-09 04:05:38,044 - INFO - Processed 1100/8095 fixtures
+2025-05-09 04:05:38,137 - INFO - Processed 1200/8095 fixtures
+2025-05-09 04:05:38,242 - INFO - Processed 1300/8095 fixtures
+2025-05-09 04:05:38,351 - INFO - Processed 1400/8095 fixtures
+2025-05-09 04:05:38,481 - INFO - Processed 1500/8095 fixtures
+2025-05-09 04:05:38,584 - INFO - Processed 1600/8095 fixtures
+2025-05-09 04:05:38,694 - INFO - Processed 1700/8095 fixtures
+2025-05-09 04:05:38,788 - INFO - Processed 1800/8095 fixtures
+2025-05-09 04:05:38,888 - INFO - Processed 1900/8095 fixtures
+2025-05-09 04:05:39,023 - INFO - Processed 2000/8095 fixtures
+2025-05-09 04:05:39,132 - INFO - Processed 2100/8095 fixtures
+2025-05-09 04:05:39,247 - INFO - Processed 2200/8095 fixtures
+2025-05-09 04:05:39,340 - INFO - Processed 2300/8095 fixtures
+2025-05-09 04:05:39,431 - INFO - Processed 2400/8095 fixtures
+2025-05-09 04:05:39,524 - INFO - Processed 2500/8095 fixtures
+2025-05-09 04:05:39,627 - INFO - Processed 2600/8095 fixtures
+2025-05-09 04:05:39,760 - INFO - Processed 2700/8095 fixtures
+2025-05-09 04:05:39,871 - INFO - Processed 2800/8095 fixtures
+2025-05-09 04:05:39,963 - INFO - Processed 2900/8095 fixtures
+2025-05-09 04:05:40,066 - INFO - Processed 3000/8095 fixtures
+2025-05-09 04:05:40,162 - INFO - Processed 3100/8095 fixtures
+2025-05-09 04:05:40,279 - INFO - Processed 3200/8095 fixtures
+2025-05-09 04:05:40,402 - INFO - Processed 3300/8095 fixtures
+2025-05-09 04:05:40,502 - INFO - Processed 3400/8095 fixtures
+2025-05-09 04:05:40,620 - INFO - Processed 3500/8095 fixtures
+2025-05-09 04:05:40,722 - INFO - Processed 3600/8095 fixtures
+2025-05-09 04:05:40,879 - INFO - Processed 3700/8095 fixtures
+2025-05-09 04:05:40,969 - INFO - Processed 3800/8095 fixtures
+2025-05-09 04:05:41,061 - INFO - Processed 3900/8095 fixtures
+2025-05-09 04:05:41,176 - INFO - Processed 4000/8095 fixtures
+2025-05-09 04:05:41,282 - INFO - Processed 4100/8095 fixtures
+2025-05-09 04:05:41,387 - INFO - Processed 4200/8095 fixtures
+2025-05-09 04:05:41,474 - INFO - Processed 4300/8095 fixtures
+2025-05-09 04:05:41,564 - INFO - Processed 4400/8095 fixtures
+2025-05-09 04:05:41,655 - INFO - Processed 4500/8095 fixtures
+2025-05-09 04:05:41,760 - INFO - Processed 4600/8095 fixtures
+2025-05-09 04:05:41,886 - INFO - Processed 4700/8095 fixtures
+2025-05-09 04:05:41,998 - INFO - Processed 4800/8095 fixtures
+2025-05-09 04:05:42,110 - INFO - Processed 4900/8095 fixtures
+2025-05-09 04:05:42,216 - INFO - Processed 5000/8095 fixtures
+2025-05-09 04:05:42,330 - INFO - Processed 5100/8095 fixtures
+2025-05-09 04:05:42,428 - INFO - Processed 5200/8095 fixtures
+2025-05-09 04:05:42,540 - INFO - Processed 5300/8095 fixtures
+2025-05-09 04:05:42,661 - INFO - Processed 5400/8095 fixtures
+2025-05-09 04:05:42,776 - INFO - Processed 5500/8095 fixtures
+2025-05-09 04:05:42,886 - INFO - Processed 5600/8095 fixtures
+2025-05-09 04:05:42,976 - INFO - Processed 5700/8095 fixtures
+2025-05-09 04:05:43,067 - INFO - Processed 5800/8095 fixtures
+2025-05-09 04:05:43,156 - INFO - Processed 5900/8095 fixtures
+2025-05-09 04:05:43,268 - INFO - Processed 6000/8095 fixtures
+2025-05-09 04:05:43,386 - INFO - Processed 6100/8095 fixtures
+2025-05-09 04:05:43,489 - INFO - Processed 6200/8095 fixtures
+2025-05-09 04:05:43,586 - INFO - Processed 6300/8095 fixtures
+2025-05-09 04:05:43,688 - INFO - Processed 6400/8095 fixtures
+2025-05-09 04:05:43,779 - INFO - Processed 6500/8095 fixtures
+2025-05-09 04:05:43,873 - INFO - Processed 6600/8095 fixtures
+2025-05-09 04:05:43,967 - INFO - Processed 6700/8095 fixtures
+2025-05-09 04:05:44,083 - INFO - Processed 6800/8095 fixtures
+2025-05-09 04:05:44,188 - INFO - Processed 6900/8095 fixtures
+2025-05-09 04:05:44,300 - INFO - Processed 7000/8095 fixtures
+2025-05-09 04:05:44,391 - INFO - Processed 7100/8095 fixtures
+2025-05-09 04:05:44,490 - INFO - Processed 7200/8095 fixtures
+2025-05-09 04:05:44,590 - INFO - Processed 7300/8095 fixtures
+2025-05-09 04:05:44,691 - INFO - Processed 7400/8095 fixtures
+2025-05-09 04:05:44,813 - INFO - Processed 7500/8095 fixtures
+2025-05-09 04:05:44,916 - INFO - Processed 7600/8095 fixtures
+2025-05-09 04:05:45,018 - INFO - Processed 7700/8095 fixtures
+2025-05-09 04:05:45,107 - INFO - Processed 7800/8095 fixtures
+2025-05-09 04:05:45,202 - INFO - Processed 7900/8095 fixtures
+2025-05-09 04:05:45,302 - INFO - Processed 8000/8095 fixtures
+2025-05-09 04:05:45,914 - INFO - Database update completed in 10.43 seconds
+2025-05-09 04:05:45,914 - INFO - Processed 8095 fixtures:
+2025-05-09 04:05:45,914 - INFO -   - Created: 7880
+2025-05-09 04:05:45,914 - INFO -   - Updated: 0
+2025-05-09 04:05:45,914 - INFO -   - Skipped: 0
+2025-05-09 04:05:45,915 - INFO - Validating fixtures...
+2025-05-09 04:05:45,923 - INFO - Found 5 Premier League fixtures for tomorrow (2025-05-10):
+2025-05-09 04:05:45,923 - INFO -   - Wolverhampton Wanderers FC vs Brighton & Hove Albion FC at 15:00
+2025-05-09 04:05:45,923 - INFO -   - Fulham FC vs Everton FC at 15:00
+2025-05-09 04:05:45,923 - INFO -   - Ipswich Town FC vs Brentford FC at Unknown time
+2025-05-09 04:05:45,923 - INFO -   - Southampton FC vs Manchester City FC at Unknown time
+2025-05-09 04:05:45,923 - INFO -   - AFC Bournemouth vs Aston Villa FC at 17:30
+2025-05-09 04:05:45,927 - INFO - Found 15 La Liga fixtures for tomorrow (2025-05-10):
+2025-05-09 04:05:45,927 - INFO -   - CD Mirandés vs CD Castellón at 16:15
+2025-05-09 04:05:45,927 - INFO -   - Burgos CF vs Córdoba CF at 18:30
+2025-05-09 04:05:45,927 - INFO -   - Real Zaragoza vs FC Cartagena at 21:00
+2025-05-09 04:05:45,927 - INFO -   - 1. FC Nürnberg II vs TSV Schwaben Augsburg at 14:00
+2025-05-09 04:05:45,927 - INFO -   - Hamburger SV II vs Weiche Flensburg 08 at 13:00
+2025-05-09 04:05:45,927 - INFO -   - Werder Bremen II vs SSV Jeddeloh II at 14:00
+2025-05-09 04:05:45,927 - INFO -   - Blau-Weiß Lohne vs TSV Havelse at 16:00
+2025-05-09 04:05:45,927 - INFO -   - Kickers Emden vs Eintracht Norderstedt at 18:00
+2025-05-09 04:05:45,927 - INFO -   - Alemannia Aachen vs 1. FC Saarbrücken at 14:00
+2025-05-09 04:05:45,927 - INFO -   - FC Ingolstadt 04 vs SV Wehen Wiesbaden at 16:30
+2025-05-09 04:05:45,927 - INFO -   - Valencia CF vs Getafe CF at 14:00
+2025-05-09 04:05:45,927 - INFO -   - RC Celta de Vigo vs Sevilla FC at 16:15
+2025-05-09 04:05:45,927 - INFO -   - Girona FC vs Villarreal CF at 18:30
+2025-05-09 04:05:45,927 - INFO -   - RCD Mallorca vs Real Valladolid CF at Unknown time
+2025-05-09 04:05:45,927 - INFO -   - Club Atlético de Madrid vs Real Sociedad de Fútbol at 21:00
+2025-05-09 04:05:45,931 - INFO - Total fixtures for tomorrow (2025-05-10): 73
+2025-05-09 04:05:45,931 - INFO - Fixture data synchronization completed successfully
+===== Fixture data refresh completed successfully at Fri May  9 04:05:45 BST 2025 =====

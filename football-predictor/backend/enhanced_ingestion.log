@@ -1,0 +1,320 @@
+2025-05-09 01:41:29,887 INFO ENHANCED_INGESTION_START with DATA_PATH: /app/data/raw
+2025-05-09 01:41:29,972 INFO Found 11 repositories to process
+2025-05-09 01:41:30,574 INFO Pulled latest data for repo: data/raw/br-brazil
+2025-05-09 01:41:30,575 INFO SYNC_REPO_START: br-brazil | PATH: data/raw/br-brazil
+2025-05-09 01:41:31,037 INFO Pulled latest data for repo: data/raw/champions-league
+2025-05-09 01:41:31,038 INFO SYNC_REPO_START: champions-league | PATH: data/raw/champions-league
+2025-05-09 01:41:31,471 INFO Pulled latest data for repo: data/raw/clubs
+2025-05-09 01:41:31,472 INFO SYNC_REPO_START: clubs | PATH: data/raw/clubs
+2025-05-09 01:41:31,907 INFO Pulled latest data for repo: data/raw/de-deutschland
+2025-05-09 01:41:31,908 INFO SYNC_REPO_START: de-deutschland | PATH: data/raw/de-deutschland
+2025-05-09 01:41:32,379 INFO Pulled latest data for repo: data/raw/eng-england
+2025-05-09 01:41:32,380 INFO SYNC_REPO_START: eng-england | PATH: data/raw/eng-england
+2025-05-09 01:41:32,902 INFO Pulled latest data for repo: data/raw/es-espana
+2025-05-09 01:41:32,903 INFO SYNC_REPO_START: es-espana | PATH: data/raw/es-espana
+2025-05-09 01:41:32,909 WARNING git pull failed for data/raw/esp-spain: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2025-05-09 01:41:32,910 INFO SYNC_REPO_START: esp-spain | PATH: data/raw/esp-spain
+2025-05-09 01:41:32,917 WARNING git pull failed for data/raw/europa-league: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2025-05-09 01:41:32,917 INFO SYNC_REPO_START: europa-league | PATH: data/raw/europa-league
+2025-05-09 01:41:33,380 INFO Pulled latest data for repo: data/raw/fr-france
+2025-05-09 01:41:33,380 INFO SYNC_REPO_START: fr-france | PATH: data/raw/fr-france
+2025-05-09 01:41:33,875 INFO Pulled latest data for repo: data/raw/it-italy
+2025-05-09 01:41:33,875 INFO SYNC_REPO_START: it-italy | PATH: data/raw/it-italy
+2025-05-09 01:41:34,301 INFO Pulled latest data for repo: data/raw/world-cup
+2025-05-09 01:41:34,302 INFO SYNC_REPO_START: world-cup | PATH: data/raw/world-cup
+2025-05-09 01:41:34,917 INFO ==================================================
+2025-05-09 01:41:34,918 INFO INGESTION SUMMARY (Time: 5.03s)
+2025-05-09 01:41:34,918 INFO Files processed: 9
+2025-05-09 01:41:34,918 INFO Clubs: 0 added, 0 updated
+2025-05-09 01:41:34,919 INFO Teams: 0 added, 0 updated
+2025-05-09 01:41:34,919 INFO Fixtures: 0 added, 0 updated
+2025-05-09 01:41:34,919 INFO Players: 0 added, 0 updated
+2025-05-09 01:41:34,920 INFO Grounds: 0 added, 0 updated
+2025-05-09 01:41:34,920 INFO Competitions: 0 added, 0 updated
+2025-05-09 01:41:34,920 INFO Seasons: 0 added, 0 updated
+2025-05-09 01:41:34,921 INFO ==================================================
+2025-05-09 01:41:34,921 INFO ENHANCED_INGESTION_COMPLETE
+2025-05-09 12:57:30,843 INFO ENHANCED_INGESTION_START with DATA_PATH: /Users/macboook/Desktop/Code Stuff/MatchWise/football-predictor/backend/data/raw
+2025-05-09 12:57:30,879 INFO Found 11 repositories to process
+2025-05-09 12:57:31,406 INFO Pulled latest data for repo: data/raw/champions-league
+2025-05-09 12:57:31,407 INFO SYNC_REPO_START: champions-league | PATH: data/raw/champions-league
+2025-05-09 12:57:31,465 ERROR Error processing data/raw/champions-league/2017-18/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,481 ERROR Error processing data/raw/champions-league/2016-17/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,501 ERROR Error processing data/raw/champions-league/2019-20/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,517 ERROR Error processing data/raw/champions-league/2021-22/el.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,530 ERROR Error processing data/raw/champions-league/2021-22/conf.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,542 ERROR Error processing data/raw/champions-league/2021-22/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,559 ERROR Error processing data/raw/champions-league/2011-12/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,618 ERROR Error processing data/raw/champions-league/2018-19/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,629 ERROR Error processing data/raw/champions-league/2024-25/el.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,633 ERROR Error processing data/raw/champions-league/2024-25/conf.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,636 ERROR Error processing data/raw/champions-league/2024-25/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,642 ERROR Error processing data/raw/champions-league/2014-15/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,658 ERROR Error processing data/raw/champions-league/2023-24/el.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,670 ERROR Error processing data/raw/champions-league/2023-24/conf.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,682 ERROR Error processing data/raw/champions-league/2023-24/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,700 ERROR Error processing data/raw/champions-league/2013-14/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,716 ERROR Error processing data/raw/champions-league/2012-13/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,743 ERROR Error processing data/raw/champions-league/2022-23/el.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,746 ERROR Error processing data/raw/champions-league/2022-23/conf.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,748 ERROR Error processing data/raw/champions-league/2022-23/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,753 ERROR Error processing data/raw/champions-league/2015-16/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,764 ERROR Error processing data/raw/champions-league/2020-21/el.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:31,775 ERROR Error processing data/raw/champions-league/2020-21/cl.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:32,592 INFO Pulled latest data for repo: data/raw/clubs
+2025-05-09 12:57:32,592 INFO SYNC_REPO_START: clubs | PATH: data/raw/clubs
+2025-05-09 12:57:32,599 ERROR Error processing data/raw/clubs/pacific/australia/au.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,599 ERROR Error processing data/raw/clubs/pacific/new-zealand/nz.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,601 ERROR Error processing data/raw/clubs/middle-east/clubs.wiki.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,601 ERROR Error processing data/raw/clubs/middle-east/saudi-arabia/sa.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,602 ERROR Error processing data/raw/clubs/middle-east/united-arab-emirates/ae.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,603 ERROR Error processing data/raw/clubs/middle-east/qatar/qa.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,603 ERROR Error processing data/raw/clubs/middle-east/iran/ir.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,604 ERROR Error processing data/raw/clubs/middle-east/israel/il.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,604 ERROR Error processing data/raw/clubs/middle-east/jordan/jo.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,605 ERROR Error processing data/raw/clubs/middle-east/lebanon/lb.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,606 ERROR Error processing data/raw/clubs/asia/clubs.wiki.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,606 ERROR Error processing data/raw/clubs/asia/south-korea/kr.clubs.lang.ko.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,607 ERROR Error processing data/raw/clubs/asia/south-korea/kr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,608 ERROR Error processing data/raw/clubs/asia/japan/jp.clubs.lang.jp.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,608 ERROR Error processing data/raw/clubs/asia/japan/jp.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,609 ERROR Error processing data/raw/clubs/asia/china/cn.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,609 ERROR Error processing data/raw/clubs/asia/singapore/sg.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,610 ERROR Error processing data/raw/clubs/asia/india/in.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,610 ERROR Error processing data/raw/clubs/asia/thailand/th.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,611 ERROR Error processing data/raw/clubs/asia/kazakhstan/kz.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,611 ERROR Error processing data/raw/clubs/south-america/clubs.wiki.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,612 ERROR Error processing data/raw/clubs/south-america/guyana/gy.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,612 ERROR Error processing data/raw/clubs/south-america/brazil/br.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,613 ERROR Error processing data/raw/clubs/south-america/ecuador/ec.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,614 ERROR Error processing data/raw/clubs/south-america/uruguay/uy.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,615 ERROR Error processing data/raw/clubs/south-america/venezuela/ve.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,616 ERROR Error processing data/raw/clubs/south-america/argentina/ar.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,617 ERROR Error processing data/raw/clubs/south-america/bolivia/bo.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,617 ERROR Error processing data/raw/clubs/south-america/colombia/co.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,617 ERROR Error processing data/raw/clubs/south-america/suriname/sr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,618 ERROR Error processing data/raw/clubs/south-america/peru/pe.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,619 ERROR Error processing data/raw/clubs/south-america/chile/cl.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,620 ERROR Error processing data/raw/clubs/south-america/paraguay/py.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,620 ERROR Error processing data/raw/clubs/central-america/honduras/hn.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,621 ERROR Error processing data/raw/clubs/central-america/guatemala/gt.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,621 ERROR Error processing data/raw/clubs/central-america/el-salvador/sv.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,621 ERROR Error processing data/raw/clubs/central-america/nicaragua/ni.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,622 ERROR Error processing data/raw/clubs/central-america/costa-rica/cr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,623 ERROR Error processing data/raw/clubs/central-america/panama/pa.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,624 ERROR Error processing data/raw/clubs/caribbean/haiti/ht.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,624 ERROR Error processing data/raw/clubs/caribbean/puerto-rico/pr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,624 ERROR Error processing data/raw/clubs/caribbean/jamaica/jm.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,624 ERROR Error processing data/raw/clubs/caribbean/trinidad-n-tobago/tt.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,625 ERROR Error processing data/raw/clubs/caribbean/anguilla/ai.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,625 ERROR Error processing data/raw/clubs/europe/clubs.wiki.de.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,629 ERROR Error processing data/raw/clubs/europe/clubs.wiki.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,630 ERROR Error processing data/raw/clubs/europe/poland/pl.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,630 ERROR Error processing data/raw/clubs/europe/wales/wal.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,631 ERROR Error processing data/raw/clubs/europe/wales/wal.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,631 ERROR Error processing data/raw/clubs/europe/belarus/by.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,632 ERROR Error processing data/raw/clubs/europe/sweden/se.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,632 ERROR Error processing data/raw/clubs/europe/russia/ru.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,633 ERROR Error processing data/raw/clubs/europe/russia/ru.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,634 ERROR Error processing data/raw/clubs/europe/norway/no.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,635 ERROR Error processing data/raw/clubs/europe/luxembourg/lu.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,636 ERROR Error processing data/raw/clubs/europe/cyprus/cy.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,636 ERROR Error processing data/raw/clubs/europe/bosnia-n-herzegovina/ba.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,637 ERROR Error processing data/raw/clubs/europe/ukraine/ua.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,638 ERROR Error processing data/raw/clubs/europe/england/eng.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,639 ERROR Error processing data/raw/clubs/europe/england/eng.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,639 ERROR Error processing data/raw/clubs/europe/england/eng.clubs.history.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,640 ERROR Error processing data/raw/clubs/europe/france/fr.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,641 ERROR Error processing data/raw/clubs/europe/france/fr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,642 ERROR Error processing data/raw/clubs/europe/moldova/md.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,642 ERROR Error processing data/raw/clubs/europe/northern-ireland/nir.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,642 ERROR Error processing data/raw/clubs/europe/georgia/ge.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,643 ERROR Error processing data/raw/clubs/europe/belgium/be.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,644 ERROR Error processing data/raw/clubs/europe/belgium/be.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,644 ERROR Error processing data/raw/clubs/europe/gibraltar/gi.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,645 ERROR Error processing data/raw/clubs/europe/turkey/tr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,646 ERROR Error processing data/raw/clubs/europe/netherlands/nl.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,647 ERROR Error processing data/raw/clubs/europe/netherlands/nl.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,648 ERROR Error processing data/raw/clubs/europe/estonia/ee.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,649 ERROR Error processing data/raw/clubs/europe/spain/es.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,649 ERROR Error processing data/raw/clubs/europe/montenegro/me.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,650 ERROR Error processing data/raw/clubs/europe/serbia/rs.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,650 ERROR Error processing data/raw/clubs/europe/croatia/hr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,652 ERROR Error processing data/raw/clubs/europe/azerbaijan/az.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,656 ERROR Error processing data/raw/clubs/europe/germany/de.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,659 ERROR Error processing data/raw/clubs/europe/germany/de.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,662 ERROR Error processing data/raw/clubs/europe/albania/al.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,664 ERROR Error processing data/raw/clubs/europe/slovakia/sk.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,668 ERROR Error processing data/raw/clubs/europe/portugal/pt.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,669 ERROR Error processing data/raw/clubs/europe/ireland/ie.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,671 ERROR Error processing data/raw/clubs/europe/macedonia/mk.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,674 ERROR Error processing data/raw/clubs/europe/switzerland/ch.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,675 ERROR Error processing data/raw/clubs/europe/switzerland/ch.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,675 ERROR Error processing data/raw/clubs/europe/san-marino/sm.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,677 ERROR Error processing data/raw/clubs/europe/faroe-islands/fo.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,678 ERROR Error processing data/raw/clubs/europe/liechtenstein/li.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,678 ERROR Error processing data/raw/clubs/europe/liechtenstein/li.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,679 ERROR Error processing data/raw/clubs/europe/lithuania/lt.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,679 ERROR Error processing data/raw/clubs/europe/scotland/sco.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,680 ERROR Error processing data/raw/clubs/europe/scotland/sco.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,682 ERROR Error processing data/raw/clubs/europe/czech-republic/cz.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,682 ERROR Error processing data/raw/clubs/europe/czech-republic/cz.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,683 ERROR Error processing data/raw/clubs/europe/kosovo/kos.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,685 ERROR Error processing data/raw/clubs/europe/slovenia/si.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,687 ERROR Error processing data/raw/clubs/europe/hungary/hu.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,688 ERROR Error processing data/raw/clubs/europe/monaco/mc.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,688 ERROR Error processing data/raw/clubs/europe/monaco/mc.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,689 ERROR Error processing data/raw/clubs/europe/bulgaria/bg.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,690 ERROR Error processing data/raw/clubs/europe/bulgaria/bg.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,692 ERROR Error processing data/raw/clubs/europe/romania/ro.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,693 ERROR Error processing data/raw/clubs/europe/italy/it.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,696 ERROR Error processing data/raw/clubs/europe/italy/it.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,697 ERROR Error processing data/raw/clubs/europe/denmark/dk.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,700 ERROR Error processing data/raw/clubs/europe/denmark/dk.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,701 ERROR Error processing data/raw/clubs/europe/latvija/lv.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,702 ERROR Error processing data/raw/clubs/europe/andorra/ad.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,703 ERROR Error processing data/raw/clubs/europe/austria/at.clubs.history.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,704 ERROR Error processing data/raw/clubs/europe/austria/at.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,705 ERROR Error processing data/raw/clubs/europe/austria/at.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,707 ERROR Error processing data/raw/clubs/europe/finland/fi.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,707 ERROR Error processing data/raw/clubs/europe/malta/mt.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,709 ERROR Error processing data/raw/clubs/europe/greece/gr.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,710 ERROR Error processing data/raw/clubs/europe/armenia/am.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,711 ERROR Error processing data/raw/clubs/europe/iceland/is.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,719 ERROR Error processing data/raw/clubs/north-america/clubs.wiki.es.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,720 ERROR Error processing data/raw/clubs/north-america/clubs.wiki.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,720 ERROR Error processing data/raw/clubs/north-america/mexico/mx.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,721 ERROR Error processing data/raw/clubs/north-america/mexico/mx.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,721 ERROR Error processing data/raw/clubs/north-america/united-states/us.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,722 ERROR Error processing data/raw/clubs/north-america/united-states/us.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,722 ERROR Error processing data/raw/clubs/north-america/canada/ca.clubs.props.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,722 ERROR Error processing data/raw/clubs/north-america/canada/ca.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,723 ERROR Error processing data/raw/clubs/africa/tunisia/tn.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,724 ERROR Error processing data/raw/clubs/africa/south-africa/za.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,724 ERROR Error processing data/raw/clubs/africa/morocco/ma.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,724 ERROR Error processing data/raw/clubs/africa/congo-dr/cd.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,725 ERROR Error processing data/raw/clubs/africa/egypt/eg.clubs.lang.ar.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:32,725 ERROR Error processing data/raw/clubs/africa/egypt/eg.clubs.txt: name 'bulk_upsert_clubs' is not defined
+2025-05-09 12:57:33,262 INFO Pulled latest data for repo: data/raw/fr-france
+2025-05-09 12:57:33,262 INFO SYNC_REPO_START: fr-france | PATH: data/raw/fr-france
+2025-05-09 12:57:33,275 ERROR Error processing data/raw/fr-france/bosnia-herzegovina/2024-25_bacup.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,286 ERROR Error processing data/raw/fr-france/bosnia-herzegovina/2023-24_ba1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,295 ERROR Error processing data/raw/fr-france/bosnia-herzegovina/2024-25_ba1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,307 ERROR Error processing data/raw/fr-france/poland/2023-24_pl1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,321 ERROR Error processing data/raw/fr-france/poland/2024-25_pl1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,333 ERROR Error processing data/raw/fr-france/poland/2024-25_pl2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,339 ERROR Error processing data/raw/fr-france/wales/2024-25_wal1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,346 ERROR Error processing data/raw/fr-france/wales/2023-24_wal1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,354 ERROR Error processing data/raw/fr-france/belarus/2024_by1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,356 ERROR Error processing data/raw/fr-france/belarus/2025_by1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,363 ERROR Error processing data/raw/fr-france/belarus/2023_by1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,366 ERROR Error processing data/raw/fr-france/sweden/2025_se1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,370 ERROR Error processing data/raw/fr-france/sweden/2025_se2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,377 ERROR Error processing data/raw/fr-france/sweden/2024_se1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,380 ERROR Error processing data/raw/fr-france/sweden/2025_se3s.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,387 ERROR Error processing data/raw/fr-france/sweden/2023_se1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,397 ERROR Error processing data/raw/fr-france/russia/2023-24_ru1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,418 ERROR Error processing data/raw/fr-france/russia/2020-21_ru1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,436 ERROR Error processing data/raw/fr-france/russia/2024-25_ru1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,457 ERROR Error processing data/raw/fr-france/russia/2019-20_ru2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,479 ERROR Error processing data/raw/fr-france/russia/2018-19_ru1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,497 ERROR Error processing data/raw/fr-france/russia/2019-20_ru1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,503 ERROR Error processing data/raw/fr-france/norway/2024_no1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,506 ERROR Error processing data/raw/fr-france/norway/2025_no1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,509 ERROR Error processing data/raw/fr-france/norway/2025_no2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,514 ERROR Error processing data/raw/fr-france/norway/2023_no1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,516 ERROR Error processing data/raw/fr-france/norway/2025_nocup.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,531 ERROR Error processing data/raw/fr-france/luxembourg/2024-25_lu1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,553 ERROR Error processing data/raw/fr-france/luxembourg/2023-24_lu1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,562 ERROR Error processing data/raw/fr-france/cyprus/2024-25_cy1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,564 ERROR Error processing data/raw/fr-france/cyprus/2024-25_cycup.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,573 ERROR Error processing data/raw/fr-france/cyprus/2023-24_cy1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,581 ERROR Error processing data/raw/fr-france/ukraine/2024-25_ua1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,590 ERROR Error processing data/raw/fr-france/ukraine/2023-24_ua1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,612 ERROR Error processing data/raw/fr-france/france/2019-20_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,624 ERROR Error processing data/raw/fr-france/france/2018-19_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,633 ERROR Error processing data/raw/fr-france/france/2019-20_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,643 ERROR Error processing data/raw/fr-france/france/2018-19_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,655 ERROR Error processing data/raw/fr-france/france/2021-22_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,668 ERROR Error processing data/raw/fr-france/france/2021-22_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,691 ERROR Error processing data/raw/fr-france/france/2014-15_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,715 ERROR Error processing data/raw/fr-france/france/2014-15_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,727 ERROR Error processing data/raw/fr-france/france/2016-17_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,744 ERROR Error processing data/raw/fr-france/france/2017-18_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,756 ERROR Error processing data/raw/fr-france/france/2016-17_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,766 ERROR Error processing data/raw/fr-france/france/2017-18_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,776 ERROR Error processing data/raw/fr-france/france/2024-25_fr2.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,795 ERROR Error processing data/raw/fr-france/france/2024-25_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,818 ERROR Error processing data/raw/fr-france/france/2015-16_fr1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:57:33,833 ERROR Error processing data/raw/fr-france/france/2024-25_frcup.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 12:58:03,839 ERROR DB error in data/raw/fr-france/france/2015-16_fr2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 12:58:33,842 ERROR DB error in data/raw/fr-france/france/2023-24_fr2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 12:59:03,855 ERROR DB error in data/raw/fr-france/france/2020-21_fr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 12:59:33,866 ERROR DB error in data/raw/fr-france/france/2023-24_fr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:00:03,873 ERROR DB error in data/raw/fr-france/france/2020-21_fr2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:00:33,879 ERROR DB error in data/raw/fr-france/france/2022-23_fr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:01:03,884 ERROR DB error in data/raw/fr-france/france/2022-23_fr2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:01:33,889 ERROR DB error in data/raw/fr-france/moldova/2023-24_md1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:02:03,896 ERROR DB error in data/raw/fr-france/moldova/2024-25_md1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:02:33,905 ERROR DB error in data/raw/fr-france/northern-ireland/2024-25_nir1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:03:03,933 ERROR DB error in data/raw/fr-france/northern-ireland/2023-24_nir1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:03:03,948 ERROR Error processing data/raw/fr-france/georgia/2023_ge1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:03,968 ERROR Error processing data/raw/fr-france/georgia/2024_ge1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:03,971 ERROR Error processing data/raw/fr-france/georgia/2025_ge1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,001 ERROR Error processing data/raw/fr-france/belgium/2023-24_be1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,016 ERROR Error processing data/raw/fr-france/belgium/2020-21_be1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,030 ERROR Error processing data/raw/fr-france/belgium/2024-25_be1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,037 ERROR Error processing data/raw/fr-france/belgium/2024-25_becup.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,047 ERROR Error processing data/raw/fr-france/belgium/2019-20_be1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,070 ERROR Error processing data/raw/fr-france/belgium/2018-19_be1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,086 ERROR Error processing data/raw/fr-france/gibraltar/2024-25_gi1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:04,103 ERROR Error processing data/raw/fr-france/gibraltar/2023-24_gi1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:03:34,111 ERROR DB error in data/raw/fr-france/turkey/2024-25_tr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:04:04,124 ERROR DB error in data/raw/fr-france/turkey/2024-25_trcup.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:04:34,137 ERROR DB error in data/raw/fr-france/turkey/2023-24_tr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:05:04,149 ERROR DB error in data/raw/fr-france/turkey/2020-21_tr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:05:34,164 ERROR DB error in data/raw/fr-france/turkey/2019-20_tr2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:06:04,173 ERROR DB error in data/raw/fr-france/turkey/2019-20_tr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:06:34,178 ERROR DB error in data/raw/fr-france/turkey/2018-19_tr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:07:04,180 ERROR DB error in data/raw/fr-france/netherlands/2024-25_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:07:34,185 ERROR DB error in data/raw/fr-france/netherlands/2024-25_nl2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:08:04,193 ERROR DB error in data/raw/fr-france/netherlands/2022-23_nl2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:08:34,202 ERROR DB error in data/raw/fr-france/netherlands/2022-23_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:09:04,212 ERROR DB error in data/raw/fr-france/netherlands/2020-21_nl2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:09:34,219 ERROR DB error in data/raw/fr-france/netherlands/2023-24_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:10:04,227 ERROR DB error in data/raw/fr-france/netherlands/2020-21_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:10:34,235 ERROR DB error in data/raw/fr-france/netherlands/2023-24_nl2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:11:04,247 ERROR DB error in data/raw/fr-france/netherlands/2021-22_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:11:34,258 ERROR DB error in data/raw/fr-france/netherlands/2021-22_nl2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:12:04,270 ERROR DB error in data/raw/fr-france/netherlands/2018-19_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:12:34,283 ERROR DB error in data/raw/fr-france/netherlands/2019-20_nl1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:13:04,289 ERROR DB error in data/raw/fr-france/netherlands/2024-25_nlcup.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:13:04,310 ERROR Error processing data/raw/fr-france/estonia/2023_ee1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:13:04,317 ERROR Error processing data/raw/fr-france/estonia/2024_ee1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:13:04,320 ERROR Error processing data/raw/fr-france/estonia/2025_ee1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:13:34,333 ERROR DB error in data/raw/fr-france/montenegro/2023-24_me1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:14:04,339 ERROR DB error in data/raw/fr-france/montenegro/2024-25_me1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:14:34,350 ERROR DB error in data/raw/fr-france/serbia/2024-25_rs1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:15:04,363 ERROR DB error in data/raw/fr-france/serbia/2023-24_rs1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:15:34,373 ERROR DB error in data/raw/fr-france/croatia/2023-24_hr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:16:04,384 ERROR DB error in data/raw/fr-france/croatia/2024-25_hr1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:16:34,390 ERROR DB error in data/raw/fr-france/azerbaijan/2023-24_az1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:17:04,397 ERROR DB error in data/raw/fr-france/azerbaijan/2024-25_az1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:17:04,417 ERROR Error processing data/raw/fr-france/latvia/2024_lv1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:17:04,424 ERROR Error processing data/raw/fr-france/latvia/2025_lv1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:17:04,434 ERROR Error processing data/raw/fr-france/latvia/2023_lv1.txt: name 'bulk_upsert_fixtures' is not defined
+2025-05-09 13:17:34,439 ERROR DB error in data/raw/fr-france/albania/2024-25_al1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:18:04,445 ERROR DB error in data/raw/fr-france/albania/2023-24_al1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:18:34,461 ERROR DB error in data/raw/fr-france/slovakia/2023-24_sk1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:19:04,474 ERROR DB error in data/raw/fr-france/slovakia/2024-25_sk1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:19:34,479 ERROR DB error in data/raw/fr-france/portugal/2022-23_pt2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:20:04,489 ERROR DB error in data/raw/fr-france/portugal/2022-23_pt1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:20:34,496 ERROR DB error in data/raw/fr-france/portugal/2023-24_pt1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:21:04,504 ERROR DB error in data/raw/fr-france/portugal/2020-21_pt2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:21:34,515 ERROR DB error in data/raw/fr-france/portugal/2023-24_pt2.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:22:04,526 ERROR DB error in data/raw/fr-france/portugal/2020-21_pt1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-05-09 13:22:34,536 ERROR DB error in data/raw/fr-france/portugal/2024-25_pt1.txt: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)

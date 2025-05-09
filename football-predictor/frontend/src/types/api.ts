@@ -33,11 +33,18 @@ export interface Fixture {
   id: number;
   season_id: number;
   match_date: string;
+  match_time?: string;
   home_team_id: number;
   away_team_id: number;
   stage: string;
   venue?: string;
   is_completed: boolean;
+  home_team_name: string;
+  away_team_name: string;
+  ground_id?: number;
+  group_id?: number;
+  competition_name?: string;
+  competition_country?: string;
 }
 
 export interface MatchResult {

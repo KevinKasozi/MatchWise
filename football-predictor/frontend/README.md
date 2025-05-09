@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# MatchWise Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend application for the MatchWise football prediction system, built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This modern frontend provides:
+- Interactive dashboards for football data analysis
+- Match predictions and historical results
+- Team and player statistics
+- Administrative interfaces for data management
+- Responsive design for desktop and mobile
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Tailwind CSS
+- Vite (for fast development)
+- React Router (for routing)
+- Axios (for API communication)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Directory Structure
+
+```
+frontend/
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── api/             # API client and services
+│   ├── assets/          # Images, icons, etc.
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page components
+│   ├── types/           # TypeScript type definitions
+│   ├── App.tsx          # Main application component
+│   └── main.tsx         # Application entry point
+├── index.html           # HTML template
+└── package.json         # Dependencies and scripts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. Install dependencies:
+```bash
+npm install
 ```
+
+2. Start the development server:
+```bash
+npm run dev
+```
+
+3. Build for production:
+```bash
+npm run build
+```
+
+## Backend Integration
+
+The frontend communicates with the FastAPI backend through:
+- The API client in `src/api/client.ts`
+- Type definitions in `src/types/api.ts` that mirror backend schemas
+
+All backend endpoints are available at `/api/v1/*` with the following key endpoints:
+- `/api/v1/fixtures` - Match fixtures and results
+- `/api/v1/teams` - Team information
+- `/api/v1/players` - Player statistics
+- `/api/v1/predictions` - Match predictions
+- `/api/v1/ingestion` - Data ingestion status and control
+
+## Features
+
+### Admin Dashboard
+Administrative interface for managing users, data, and system settings
+
+### Match Predictions
+View predicted match outcomes based on machine learning models
+
+### Team Analysis
+Detailed team statistics and performance metrics
+
+### Fixture Results
+View match results and historical data
+
+## Development
+
+### Recommended Setup
+- VS Code with the following extensions:
+  - ESLint
+  - Prettier
+  - Tailwind CSS IntelliSense
+
+### Style Guide
+- Follow ESLint configuration for code style
+- Use functional components with hooks
+- Create reusable components in the components directory
+- Add types for all props and state
+
+### Commands
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+- `npm run test` - Run tests

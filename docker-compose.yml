@@ -18,7 +18,7 @@ services:
     volumes:
       - ./football-predictor/backend:/app
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       - DATABASE_URL=postgresql+psycopg2://matchwise:matchwise@db:5432/matchwise
     depends_on:
@@ -31,9 +31,9 @@ services:
       - ./football-predictor/frontend:/app
       - /app/node_modules
     ports:
-      - "5173:5173"
+      - "5174:5173"
     environment:
-      - VITE_API_URL=http://localhost:8000/api/v1
+      - VITE_API_URL=http://localhost:8001/api/v1
 
 volumes:
   postgres_data: 

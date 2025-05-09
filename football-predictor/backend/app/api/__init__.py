@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from .endpoints import clubs, teams, competitions, fixtures, predictions, grounds, groups, players
+from .endpoints import clubs, teams, competitions, fixtures, predictions, grounds, groups, players, ingestion
 
 router = APIRouter()
 
@@ -10,4 +10,5 @@ router.include_router(fixtures.router, prefix="/fixtures", tags=["fixtures"])
 router.include_router(predictions.router, prefix="/predictions", tags=["predictions"])
 router.include_router(grounds.router, prefix="/grounds", tags=["grounds"])
 router.include_router(groups.router, prefix="/groups", tags=["groups"])
-router.include_router(players.router, prefix="/players", tags=["players"]) 
+router.include_router(players.router, prefix="/players", tags=["players"])
+router.include_router(ingestion.router, prefix="/ingestion", tags=["ingestion"]) 

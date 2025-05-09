@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import RealFixtures from '../components/RealFixtures';
 
 // Mock data for demo
 const nextMatch = {
@@ -114,6 +115,11 @@ export default function Home() {
           </div>
           <div className="text-sm text-slate-600 mt-2">Prediction: <span className="font-bold text-primary">{nextMatch.prediction.winner}</span></div>
         </div>
+      </div>
+
+      {/* Real Fixtures Section */}
+      <div className="bg-white rounded-2xl shadow-lg p-6">
+        <RealFixtures />
       </div>
 
       {/* Live Confidence & Model Accuracy */}

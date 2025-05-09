@@ -1,147 +1,150 @@
-# Football Predictor
+# MatchWise - Football Prediction System
 
-A full-stack football prediction system that ingests historical and current football data from OpenFootball, stores it in a relational database, and uses machine learning to make predictions via a modern frontend.
+MatchWise is a modern football prediction system that displays real fixture data and provides predictions for upcoming matches.
 
 ## Features
 
-- Data ingestion from OpenFootball
-- RESTful API with FastAPI
-- Modern React frontend with Material-UI
-- PostgreSQL database
-- Machine learning predictions
-- CI/CD with GitHub Actions
+- **Real Fixtures**: Displays actual upcoming fixtures from major football leagues including Premier League, La Liga, Bundesliga, Serie A, and Ligue 1
+- **Team Information**: Shows team information with proper team logos/badges
+- **Competition Grouping**: Organizes fixtures by competition and date
+- **Prediction System**: Analyze and predict match outcomes (coming soon)
 
-## Tech Stack
+## Project Structure
 
-### Backend
-- FastAPI
-- SQLAlchemy
-- PostgreSQL
-- scikit-learn
-- Python 3.11+
+The project consists of two main parts:
 
-### Frontend
-- React 18
-- TypeScript
-- Material-UI
-- Vite
-- React Query
-- React Router
+1. **Backend** (FastAPI)
+   - Database models for fixtures, teams, competitions, etc.
+   - API endpoints for retrieving fixture data
+   - Data ingestion scripts for loading fixtures from raw data files
 
-## Getting Started
+2. **Frontend** (React with Vite)
+   - Modern responsive UI for displaying fixtures
+   - Integration with the backend API
+   - Tabbed interface for viewing fixtures by date
+
+## Setup Instructions
 
 ### Prerequisites
 
-- Python 3.11+
-- Node.js 18+
-- PostgreSQL 13+
-- Docker and Docker Compose (optional)
+- Node.js (v16+)
+- Python (v3.10+)
+- PostgreSQL
 
-### Environment Setup
+### Backend Setup
 
-1. Clone the repository:
+1. Navigate to the backend directory:
+
 ```bash
-git clone https://github.com/yourusername/football-predictor.git
-cd football-predictor
+cd football-predictor/backend
 ```
 
-2. Create and configure environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
+2. Create and activate a virtual environment:
 
-3. Set up the backend:
 ```bash
-cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-4. Set up the frontend:
-```bash
-cd frontend
-npm install
+4. Set up the database connection in .env file:
+
+```
+DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/football_predictor
 ```
 
-### Running the Application
+5. Load fixtures into the database:
 
-1. Start the PostgreSQL database:
 ```bash
-docker-compose up -d db
+cd scripts
+./load_real_fixtures.sh
 ```
 
-2. Run the backend:
+6. Start the backend server:
+
 ```bash
-cd backend
+cd ..
 uvicorn app.main:app --reload
 ```
 
-3. Run the frontend:
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+
 ```bash
-cd frontend
+cd football-predictor/frontend
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a .env file with:
+
+```
+VITE_API_URL=http://localhost:8000/api/v1
+```
+
+4. Start the development server:
+
+```bash
 npm run dev
 ```
 
-The application will be available at:
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
+5. Open your browser and navigate to http://localhost:5173
 
-## Development
+## Using the Application
 
-### Backend Development
+1. Navigate to the Fixtures page to see upcoming matches
+2. View fixtures organized by date and competition
+3. Each fixture shows the teams with their respective logos
+4. Tabs allow you to view today's fixtures, tomorrow's fixtures, or upcoming fixtures
 
-- API endpoints are in `backend/app/api/endpoints/`
-- Database models are in `backend/app/models/`
-- Data ingestion logic is in `backend/app/ingestion/`
-- ML pipeline is in `backend/ml/`
+## Working with Real Fixture Data
 
-### Frontend Development
+The system uses real fixture data from various football leagues. This data is stored in text files in the `backend/data/raw` directory, organized by league and season.
 
-- Components are in `frontend/src/components/`
-- Pages are in `frontend/src/pages/`
-- API client is in `frontend/src/api/`
-- Types are in `frontend/src/types/`
+### How Fixture Data Works
 
-### Running Tests
+1. Raw data is stored in text files (e.g., `backend/data/raw/eng-england/2023-24/1-premierleague.txt`)
+2. The `real_fixture_parser.py` script parses these files and loads them into the database
+3. The `update_fixture_dates.py` script ensures all fixtures use dates in the current year
+4. The API endpoints in `fixtures.py` retrieve this data with proper team and competition information
+5. The frontend displays these fixtures in a user-friendly interface
 
-Backend tests:
-```bash
-cd backend
-pytest
-```
+### Updating Fixture Data
 
-Frontend tests:
-```bash
-cd frontend
-npm test
-```
+To update fixture data:
 
-### Code Quality
+1. Add or modify text files in the `backend/data/raw` directory
+2. Run the load script: `cd backend/scripts && ./load_real_fixtures.sh`
 
-The project uses several tools to maintain code quality:
+## Technologies Used
 
-- Backend:
-  - black for code formatting
-  - flake8 for linting
-  - mypy for type checking
-  - bandit for security checks
+- **Backend**:
+  - FastAPI
+  - SQLAlchemy
+  - PostgreSQL
+  - Pydantic
 
-- Frontend:
-  - ESLint for linting
-  - TypeScript for type checking
-  - Prettier for code formatting
+- **Frontend**:
+  - React
+  - Vite
+  - TailwindCSS
+  - React Query
+  - Headless UI
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License. 

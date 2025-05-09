@@ -6,5 +6,6 @@ __all__ = [
     "predictions",
     "grounds",
     "groups",
-    "players"
+    "players",
+    "ingestion"
 ] 

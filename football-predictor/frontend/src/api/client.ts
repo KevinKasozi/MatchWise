@@ -1,6 +1,9 @@
 import axios from 'axios';
 
+// Use a hardcoded URL if the environment variable isn't available
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+
+console.log('Using API URL:', API_URL);
 
 export const apiClient = axios.create({
   baseURL: API_URL,
