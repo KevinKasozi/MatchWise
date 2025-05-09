@@ -63,10 +63,16 @@ const accuracyByLeague = [
   { league: 'La Liga', accuracy: 0.78 },
 ];
 
+// Add a Result type for the filter functions
+type Result = {
+  correct: boolean;
+  // add other fields as needed
+};
+
 const tabs = [
   { label: 'All', filter: () => true },
-  { label: 'Model Wins', filter: (r: any) => r.correct },
-  { label: 'Model Losses', filter: (r: any) => !r.correct },
+  { label: 'Model Wins', filter: (r: Result) => r.correct },
+  { label: 'Model Losses', filter: (r: Result) => !r.correct },
 ];
 
 export default function Results() {

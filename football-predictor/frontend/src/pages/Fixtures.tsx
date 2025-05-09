@@ -17,7 +17,7 @@ export default function Fixtures() {
   const [status, setStatus] = useState<FixtureStatus>('upcoming');
   const [loading, setLoading] = useState(true);
 
-  const { data: fixturesData = [], isError, error } = useQuery<(Fixture & { result?: MatchResult })[]>({
+  const { data: fixturesData = [], isError } = useQuery<(Fixture & { result?: MatchResult })[]>({
     queryKey: ['fixtures', status],
     queryFn: async () => {
       const res = await apiClient.get<(Fixture & { result?: MatchResult })[]>('/fixtures', {
@@ -171,7 +171,7 @@ export default function Fixtures() {
                                           <div className="flex flex-col items-center justify-center min-w-[80px]">
                                             <div className="bg-gray-100 rounded-lg px-3 py-1 text-sm font-bold text-gray-800 min-w-[60px] text-center">
                                               {fixture.is_completed && 'result' in fixture ? (
-                                                <span>{(fixture as any).result.home_score} - {(fixture as any).result.away_score}</span>
+                                                <span>{fixture.result?.home_score} - {fixture.result?.away_score}</span>
                                               ) : (
                                                 <span>vs</span>
                                               )}
