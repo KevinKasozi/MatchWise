@@ -13,15 +13,17 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/clubs" element={<Clubs />} />
-            <Route path="/competitions" element={<Competitions />} />
-            <Route path="/fixtures" element={<Fixtures />} />
-            <Route path="/predictions" element={<Predictions />} />
-          </Routes>
-        </Layout>
+        <div data-testid="app-root">
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/clubs" element={<Clubs />} />
+              <Route path="/competitions" element={<Competitions />} />
+              <Route path="/fixtures" element={<Fixtures />} />
+              <Route path="/predictions" element={<Predictions />} />
+            </Routes>
+          </Layout>
+        </div>
       </Router>
     </QueryClientProvider>
   );
