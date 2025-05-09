@@ -14,6 +14,7 @@ MatchWise is a modern football prediction system that displays real fixture data
 The project consists of two main parts:
 
 1. **Backend** (FastAPI)
+
    - Database models for fixtures, teams, competitions, etc.
    - API endpoints for retrieving fixture data
    - Data ingestion scripts for loading fixtures from raw data files
@@ -129,6 +130,7 @@ To update fixture data:
 ## Technologies Used
 
 - **Backend**:
+
   - FastAPI
   - SQLAlchemy
   - PostgreSQL
@@ -147,4 +149,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.

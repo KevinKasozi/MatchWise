@@ -5,6 +5,7 @@ The frontend application for the MatchWise football prediction system, built wit
 ## Overview
 
 This modern frontend provides:
+
 - Interactive dashboards for football data analysis
 - Match predictions and historical results
 - Team and player statistics
@@ -40,16 +41,19 @@ frontend/
 ## Getting Started
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Start the development server:
+
 ```bash
 npm run dev
 ```
 
 3. Build for production:
+
 ```bash
 npm run build
 ```
@@ -57,10 +61,12 @@ npm run build
 ## Backend Integration
 
 The frontend communicates with the FastAPI backend through:
+
 - The API client in `src/api/client.ts`
 - Type definitions in `src/types/api.ts` that mirror backend schemas
 
 All backend endpoints are available at `/api/v1/*` with the following key endpoints:
+
 - `/api/v1/fixtures` - Match fixtures and results
 - `/api/v1/teams` - Team information
 - `/api/v1/players` - Player statistics
@@ -70,26 +76,32 @@ All backend endpoints are available at `/api/v1/*` with the following key endpoi
 ## Features
 
 ### Admin Dashboard
+
 Administrative interface for managing users, data, and system settings
 
 ### Match Predictions
+
 View predicted match outcomes based on machine learning models
 
 ### Team Analysis
+
 Detailed team statistics and performance metrics
 
 ### Fixture Results
+
 View match results and historical data
 
 ## Development
 
 ### Recommended Setup
+
 - VS Code with the following extensions:
   - ESLint
   - Prettier
   - Tailwind CSS IntelliSense
 
 ### Style Guide
+
 - Follow ESLint configuration for code style
 - Use functional components with hooks
 - Create reusable components in the components directory

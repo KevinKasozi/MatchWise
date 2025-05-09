@@ -5,6 +5,7 @@ The backend for the MatchWise football prediction system, built with FastAPI, SQ
 ## Overview
 
 This backend provides:
+
 - RESTful API for football data
 - Enhanced data ingestion from OpenFootball sources
 - Database models for football entities
@@ -45,28 +46,33 @@ backend/
 ## Getting Started
 
 1. Create a virtual environment:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env
 # Edit .env with your configuration
 ```
 
 4. Run database migrations:
+
 ```bash
 alembic upgrade head
 ```
 
 5. Run the application:
+
 ```bash
 uvicorn app.main:app --reload
 ```
@@ -87,11 +93,13 @@ The backend includes a comprehensive data ingestion system for OpenFootball data
 ### Running Data Ingestion
 
 Run full ingestion (recommended):
+
 ```bash
 ./scripts/run_full_ingestion.sh
 ```
 
 For more control, use the Python script directly:
+
 ```bash
 # Process all data
 python -m scripts.enhanced_ingestion
@@ -118,6 +126,7 @@ python -m scripts.enhanced_ingestion --parallel --threads 4
 ## Database Models
 
 The database schema includes the following main entities:
+
 - **Club** - Football clubs with metadata
 - **Team** - Teams (club or national)
 - **Player** - Player information
@@ -130,6 +139,7 @@ The database schema includes the following main entities:
 ## Machine Learning
 
 The prediction system uses:
+
 - Historical match data for training
 - Team performance metrics
 - Home/away advantage factors
@@ -142,6 +152,7 @@ Models are stored in the `ml/` directory, with prediction logic in `ml/predict.p
 ### Code Quality
 
 This project uses:
+
 - black for code formatting
 - flake8 for linting
 - mypy for type checking
@@ -156,8 +167,9 @@ pytest
 ### Environment Variables
 
 Key environment variables:
+
 - `DATABASE_URL`: PostgreSQL connection string
 - `SECRET_KEY`: Security key for JWT
 - `ALGORITHM`: JWT algorithm
 - `ACCESS_TOKEN_EXPIRE_MINUTES`: Token expiration
-- `DATA_PATH`: Path to football data 
+- `DATA_PATH`: Path to football data

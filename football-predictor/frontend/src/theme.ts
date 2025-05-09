@@ -12,4 +12,4 @@ export const theme = {
     lg: "0.5rem",
     full: "9999px",
   },
-} 
+};

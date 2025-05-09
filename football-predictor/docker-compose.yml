@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
@@ -39,4 +39,4 @@ services:
       - VITE_API_URL=http://localhost:8000/api/v1
 
 volumes:
-  postgres_data: 
+  postgres_data:

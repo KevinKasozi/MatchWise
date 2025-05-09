@@ -5,6 +5,7 @@
 ---
 
 ## 🚀 Features
+
 - **Automated Data Ingestion:** Robust scripts to parse, normalize, and ingest raw football data (fixtures, clubs, squads, results) from open data sources.
 - **Team Name Normalization:** Advanced mapping to unify team/club names across inconsistent datasets.
 - **Modern Backend:** Python, FastAPI, SQLAlchemy, and Alembic for scalable APIs and database management.
@@ -37,12 +38,14 @@ MatchWise/
 ## ⚙️ Setup & Installation
 
 ### 1. **Clone the Repository**
+
 ```bash
 git clone https://github.com/KevinKasozi/MatchWise.git
 cd MatchWise
 ```
 
 ### 2. **Backend Setup**
+
 - Python 3.10+
 - PostgreSQL (or compatible DB)
 - Install dependencies:
@@ -59,6 +62,7 @@ cd MatchWise
   ```
 
 ### 3. **Frontend Setup**
+
 - Node.js 18+
 - Install dependencies:
   ```bash
@@ -93,6 +97,7 @@ cd MatchWise
 ---
 
 ## 🧩 Key Components
+
 - **`app/models/models.py`**: SQLAlchemy models for clubs, teams, fixtures, results, etc.
 - **`scripts/enhanced_ingestion.py`**: Main ingestion script (batch, parallel, robust).
 - **`scripts/team_mapper_builder.py`**: Builds the team name normalization map.
@@ -101,12 +106,14 @@ cd MatchWise
 ---
 
 ## 🛡️ Validation & Auditing
+
 - **`scripts/verify_team_assignments.py`**: Checks for misassigned teams/fixtures.
 - **Audit logs**: All ingestion actions are logged for traceability.
 
 ---
 
 ## 🤝 Contributing
+
 1. Fork the repo and create a feature branch.
 2. Follow code style and add tests where possible.
 3. Submit a pull request with a clear description.
@@ -115,15 +122,18 @@ cd MatchWise
 ---
 
 ## 📄 License
+
 MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
 ## 🙏 Acknowledgements
+
 - [OpenFootball](https://github.com/openfootball) for raw data sources.
 - The Python, FastAPI, SQLAlchemy, Vite, and React communities.
 
 ---
 
 ## 📬 Contact
-For questions, suggestions, or collaborations, open an issue or contact the maintainer via GitHub. 
+
+For questions, suggestions, or collaborations, open an issue or contact the maintainer via GitHub.

@@ -2,47 +2,48 @@
 const standings = [
   {
     pos: 1,
-    team: 'Arsenal',
-    crest: 'https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg',
+    team: "Arsenal",
+    crest: "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
     played: 36,
     won: 25,
     drawn: 7,
     lost: 4,
     points: 82,
-    form: ['W', 'W', 'D', 'W', 'W'],
+    form: ["W", "W", "D", "W", "W"],
   },
   {
     pos: 2,
-    team: 'Man City',
-    crest: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
+    team: "Man City",
+    crest:
+      "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
     played: 36,
     won: 24,
     drawn: 8,
     lost: 4,
     points: 80,
-    form: ['W', 'D', 'W', 'W', 'W'],
+    form: ["W", "D", "W", "W", "W"],
   },
   {
     pos: 3,
-    team: 'Liverpool',
-    crest: 'https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg',
+    team: "Liverpool",
+    crest: "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
     played: 36,
     won: 22,
     drawn: 10,
     lost: 4,
     points: 76,
-    form: ['L', 'W', 'D', 'W', 'W'],
+    form: ["L", "W", "D", "W", "W"],
   },
   {
     pos: 4,
-    team: 'Chelsea',
-    crest: 'https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg',
+    team: "Chelsea",
+    crest: "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
     played: 36,
     won: 20,
     drawn: 9,
     lost: 7,
     points: 69,
-    form: ['W', 'L', 'W', 'D', 'W'],
+    form: ["W", "L", "W", "D", "W"],
   },
 ];
 
@@ -67,11 +68,16 @@ export default function Standings() {
             </thead>
             <tbody>
               {standings.map((t) => (
-                <tr key={t.team} className={`border-b last:border-0 hover:bg-primary/10 transition duration-150 cursor-pointer ${t.pos === 1 ? 'bg-primary/10' : ''}`}>
+                <tr
+                  key={t.team}
+                  className={`border-b last:border-0 hover:bg-primary/10 transition duration-150 cursor-pointer ${t.pos === 1 ? "bg-primary/10" : ""}`}
+                >
                   <td className="p-2 font-bold text-slate-700">{t.pos}</td>
                   <td className="p-2 flex items-center gap-2">
                     <img src={t.crest} alt={t.team} className="w-6 h-6" />
-                    <span className="font-semibold text-slate-900">{t.team}</span>
+                    <span className="font-semibold text-slate-900">
+                      {t.team}
+                    </span>
                   </td>
                   <td className="p-2">{t.played}</td>
                   <td className="p-2">{t.won}</td>
@@ -81,7 +87,12 @@ export default function Standings() {
                   <td className="p-2">
                     <div className="flex gap-1">
                       {t.form.map((f, i) => (
-                        <span key={i} className={`px-2 py-1 rounded text-xs font-bold shadow-sm transition-colors duration-150 ${f === 'W' ? 'bg-success/90 text-white hover:bg-success' : f === 'D' ? 'bg-warning/90 text-white hover:bg-warning' : 'bg-error/90 text-white hover:bg-error'}`}>{f}</span>
+                        <span
+                          key={i}
+                          className={`px-2 py-1 rounded text-xs font-bold shadow-sm transition-colors duration-150 ${f === "W" ? "bg-success/90 text-white hover:bg-success" : f === "D" ? "bg-warning/90 text-white hover:bg-warning" : "bg-error/90 text-white hover:bg-error"}`}
+                        >
+                          {f}
+                        </span>
                       ))}
                     </div>
                   </td>
@@ -93,4 +104,4 @@ export default function Standings() {
       </div>
     </div>
   );
-} 
+}

@@ -11,14 +11,14 @@ export interface Club {
 export interface Team {
   id: number;
   club_id?: number;
-  team_type: 'club' | 'national';
+  team_type: "club" | "national";
 }
 
 export interface Competition {
   id: number;
   name: string;
   country: string;
-  competition_type: 'league' | 'cup' | 'international';
+  competition_type: "league" | "cup" | "international";
 }
 
 export interface Season {
@@ -71,4 +71,4 @@ export interface Prediction {
   away_win_probability: number;
   predicted_home_score?: number;
   predicted_away_score?: number;
-} 
+}

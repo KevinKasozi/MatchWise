@@ -5,6 +5,7 @@ This directory contains the enhanced football data ingestion system for MatchWis
 ## Overview
 
 The ingestion system processes football data from various sources including:
+
 - Clubs and teams
 - Players and squads
 - Fixtures and results
@@ -28,6 +29,7 @@ To run a complete data ingestion process:
 ```
 
 This will:
+
 1. Build/update the team name mapping
 2. Process all data repositories
 3. Update the database with new/changed data
@@ -64,6 +66,7 @@ GET /api/v1/ingestion/status
 ## Data Structure
 
 The raw data is structured in directories by:
+
 - League/country (e.g., eng-england, es-espana)
 - Season (e.g., 2023-24)
 - Content type (fixtures, clubs, squads)
@@ -71,14 +74,16 @@ The raw data is structured in directories by:
 ## Monitoring
 
 Ingestion logs are saved to:
+
 - **enhanced_ingestion.log**: Detailed processing logs
 - **IngestionAudit** database table: Historical record of processed files
 
 ## Extending
 
 To add support for new data formats:
+
 1. Create a parser in the `parsers/` directory
-2. Add the new parser to the processing logic in enhanced_ingestion.py 
+2. Add the new parser to the processing logic in enhanced_ingestion.py
 
 # Football Predictor Data Ingestion
 
@@ -95,6 +100,7 @@ The most important script for setting up real fixture data is:
 ```
 
 This script:
+
 1. Creates the database tables if they don't exist
 2. Loads fixtures from the raw data files in the `/data/raw` directory
 3. Updates fixture dates to ensure they use the current year
@@ -129,6 +135,7 @@ football-predictor/backend/data/raw
 ```
 
 This includes fixtures from:
+
 - English Premier League
 - Spanish La Liga
 - German Bundesliga
@@ -147,6 +154,7 @@ To add new fixtures manually, you can:
 ## Database Structure
 
 Fixtures are stored in the `fixtures` table with relationships to:
+
 - `teams` - Home and away teams
 - `clubs` - The clubs that the teams belong to
 - `competitions` - The competition/league the fixture is part of
@@ -162,8 +170,9 @@ If you encounter errors when loading fixtures:
 4. Check the database tables to ensure they're created correctly
 
 For database connection issues, the default connection string is:
+
 ```
 postgresql+psycopg2://postgres:postgres@localhost:5432/football_predictor
 ```
 
-You can override this by setting the DATABASE_URL environment variable. 
+You can override this by setting the DATABASE_URL environment variable.

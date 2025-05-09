@@ -1,17 +1,21 @@
-import { useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { apiClient } from '../api/client';
-import type { Club } from '../types/api';
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { apiClient } from "../api/client";
+import type { Club } from "../types/api";
 
 export default function Clubs() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const itemsPerPage = 12;
 
-  const { data: clubs = [], isLoading, isError } = useQuery<Club[]>({
-    queryKey: ['clubs', search, page],
+  const {
+    data: clubs = [],
+    isLoading,
+    isError,
+  } = useQuery<Club[]>({
+    queryKey: ["clubs", search, page],
     queryFn: async () => {
-      const res = await apiClient.get<Club[]>('/clubs', {
+      const res = await apiClient.get<Club[]>("/clubs", {
         params: {
           search,
           skip: (page - 1) * itemsPerPage,
@@ -68,34 +72,52 @@ export default function Clubs() {
 
       {clubs.length === 0 ? (
         <div className="bg-white rounded shadow p-8 text-center border border-gray-100">
-          <p className="text-gray-500">No clubs found. Try a different search term or check back later.</p>
+          <p className="text-gray-500">
+            No clubs found. Try a different search term or check back later.
+          </p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {clubs.map((club) => (
-            <div key={club.id} className="bg-white rounded shadow p-4 border border-gray-100 hover:shadow-md transition-shadow">
-              <h2 className="text-lg font-semibold mb-2">{club.name || "Unknown Club"}</h2>
-              
+            <div
+              key={club.id}
+              className="bg-white rounded shadow p-4 border border-gray-100 hover:shadow-md transition-shadow"
+            >
+              <h2 className="text-lg font-semibold mb-2">
+                {club.name || "Unknown Club"}
+              </h2>
+
               {club.country && (
-                <div className="text-gray-600 text-sm">Country: {club.country}</div>
+                <div className="text-gray-600 text-sm">
+                  Country: {club.country}
+                </div>
               )}
-              
+
               {club.founded_year && (
-                <div className="text-gray-600 text-sm">Founded: {club.founded_year}</div>
+                <div className="text-gray-600 text-sm">
+                  Founded: {club.founded_year}
+                </div>
               )}
-              
+
               {club.stadium_name && (
-                <div className="text-gray-600 text-sm">Stadium: {club.stadium_name}</div>
+                <div className="text-gray-600 text-sm">
+                  Stadium: {club.stadium_name}
+                </div>
               )}
-              
+
               {club.city && (
                 <div className="text-gray-600 text-sm">City: {club.city}</div>
               )}
-              
+
               {/* If no details are available, show a placeholder message */}
-              {!club.country && !club.founded_year && !club.stadium_name && !club.city && (
-                <div className="text-gray-400 text-sm italic">No additional details available</div>
-              )}
+              {!club.country &&
+                !club.founded_year &&
+                !club.stadium_name &&
+                !club.city && (
+                  <div className="text-gray-400 text-sm italic">
+                    No additional details available
+                  </div>
+                )}
             </div>
           ))}
         </div>
@@ -110,8 +132,8 @@ export default function Clubs() {
               onClick={() => handlePageChange(p)}
               className={`px-3 py-1 rounded border text-sm font-medium transition-colors ${
                 p === page
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-blue-600 border-blue-300 hover:bg-blue-50'
+                  ? "bg-blue-600 text-white border-blue-600"
+                  : "bg-white text-blue-600 border-blue-300 hover:bg-blue-50"
               }`}
             >
               {p}
@@ -121,4 +143,4 @@ export default function Clubs() {
       )}
     </div>
   );
-} 
+}

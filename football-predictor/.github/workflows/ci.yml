@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   backend:
@@ -25,69 +25,69 @@ jobs:
           --health-retries 5
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        cd backend
-        pip install -r requirements.txt
-        
-    - name: Run black
-      run: |
-        cd backend
-        black . --check
-        
-    - name: Run flake8
-      run: |
-        cd backend
-        flake8 .
-        
-    - name: Run mypy
-      run: |
-        cd backend
-        mypy .
-        
-    - name: Run bandit
-      run: |
-        cd backend
-        bandit -r .
-        
-    - name: Run tests
-      env:
-        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/football_predictor_test
-      run: |
-        cd backend
-        pytest
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          cd backend
+          pip install -r requirements.txt
+
+      - name: Run black
+        run: |
+          cd backend
+          black . --check
+
+      - name: Run flake8
+        run: |
+          cd backend
+          flake8 .
+
+      - name: Run mypy
+        run: |
+          cd backend
+          mypy .
+
+      - name: Run bandit
+        run: |
+          cd backend
+          bandit -r .
+
+      - name: Run tests
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/football_predictor_test
+        run: |
+          cd backend
+          pytest
 
   frontend:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: |
-        cd frontend
-        npm ci
-        
-    - name: Build
-      run: |
-        cd frontend
-        npm run build
-        
-    - name: Run tests
-      run: |
-        cd frontend
-        npm test 
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Build
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Run tests
+        run: |
+          cd frontend
+          npm test
